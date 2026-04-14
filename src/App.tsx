@@ -1,7 +1,27 @@
 import { useState } from 'react'
 import AquariumLanding from './components/AquariumLanding'
+import Section from './components/Section'
 
 const SECTION_IDS = ['about', 'experience', 'education', 'skills', 'projects', 'research', 'contact'] as const
+
+const gradientStyle: React.CSSProperties = {
+  position: 'absolute',
+  top: 0,
+  left: 0,
+  right: 0,
+  height: '35vh',
+  background: 'linear-gradient(to bottom, transparent 0%, #000000 100%)',
+  zIndex: 1,
+  pointerEvents: 'none',
+}
+
+const headingStyle: React.CSSProperties = {
+  fontSize: '2rem',
+  color: 'var(--ds-text-secondary)',
+  fontFamily: "'JetBrains Mono', monospace",
+  textTransform: 'uppercase',
+  letterSpacing: '0.2em',
+}
 
 export default function App() {
   const [heroVisible, setHeroVisible] = useState(true)
@@ -10,29 +30,13 @@ export default function App() {
     <>
       <AquariumLanding onHeroVisibility={setHeroVisible} heroVisible={heroVisible} />
       <div style={{ position: 'relative', zIndex: 10 }}>
-        {SECTION_IDS.map((id, i) => (
-          <section
-            key={id}
-            id={id}
-            style={{
-              minHeight: '100vh',
-              background: i === 0
-                ? 'linear-gradient(to bottom, transparent 0%, #000000 35vh)'
-                : '#000000',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}
-          >
-            <h2 style={{
-              fontSize: '2rem',
-              color: 'rgba(255,255,255,0.55)',
-              textTransform: 'uppercase',
-              letterSpacing: '0.2em',
-            }}>
+        <div style={gradientStyle} />
+        {SECTION_IDS.map((id) => (
+          <Section key={id} id={id}>
+            <h2 style={headingStyle}>
               {id}
             </h2>
-          </section>
+          </Section>
         ))}
       </div>
     </>
