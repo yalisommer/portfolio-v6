@@ -29,7 +29,9 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Scrolling back up to the aquarium shows fish detection still running (canvas and video never unmounted)
   4. Fish detection bounding boxes stop rendering within seconds of scrolling away from the hero (inference paused)
   5. Fish detection bounding boxes resume rendering when user scrolls back to the hero (inference resumed)
-**Plans**: TBD
+**Plans**: 1 plan
+Plans:
+- [ ] 01-01-PLAN.md — Enable scroll layout, add 7 section stubs, wire IntersectionObserver inference gating
 
 ### Phase 2: Design System + Navigation
 **Goal**: A locked visual foundation (colors, typography, motifs, animations) and a sticky nav that lets users jump to any section and see where they are
@@ -76,7 +78,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Layout Skeleton + WASM Gating | 0/? | Not started | - |
+| 1. Layout Skeleton + WASM Gating | 0/1 | Planning complete | - |
 | 2. Design System + Navigation | 0/? | Not started | - |
 | 3. Content Sections | 0/? | Not started | - |
 | 4. Deployment + QA | 0/? | Not started | - |
