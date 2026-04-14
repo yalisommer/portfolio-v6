@@ -10,6 +10,16 @@ export default function App() {
     <>
       <AquariumLanding onHeroVisibility={setHeroVisible} heroVisible={heroVisible} />
       <div style={{ position: 'relative', zIndex: 10 }}>
+        <div style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          height: '30vh',
+          background: 'linear-gradient(to bottom, transparent, #000000)',
+          pointerEvents: 'none',
+          zIndex: 1,
+        }} />
         {SECTION_IDS.map(id => (
           <section
             key={id}
