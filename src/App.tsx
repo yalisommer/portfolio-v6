@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import AquariumLanding from './components/AquariumLanding'
+import Nav from './components/Nav'
 import Section from './components/Section'
 
 const SECTION_IDS = ['about', 'experience', 'education', 'skills', 'projects', 'research', 'contact'] as const
@@ -28,6 +29,7 @@ export default function App() {
 
   return (
     <>
+      <Nav heroVisible={heroVisible} />
       <AquariumLanding onHeroVisibility={setHeroVisible} heroVisible={heroVisible} />
       <div style={{ position: 'relative', zIndex: 10 }}>
         <div style={gradientStyle} />
