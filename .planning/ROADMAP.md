@@ -85,3 +85,14 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 | 2. Design System + Navigation | 2/2 | Complete   | 2026-04-14 |
 | 3. Content Sections | 0/? | Not started | - |
 | 4. Deployment + QA | 0/? | Not started | - |
+
+## Backlog
+
+### Phase 999.1: Animated 3D Research Mesh Background (BACKLOG)
+
+**Goal:** Iconic graphics research meshes (Stanford bunny, dragon, Lucy, etc.) rendered as low-poly wireframes or flat-shaded polygons slowly drifting behind the lower content sections (Experience, Projects, Research). WebGL canvas layer at low opacity — ties the CV/graphics identity into the scroll experience without distracting from text.
+**Requirements:** TBD
+**Plans:** 0 plans
+
+Plans:
+- [ ] TBD (promote with /gsd:review-backlog when ready)
