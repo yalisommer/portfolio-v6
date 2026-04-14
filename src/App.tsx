@@ -17,7 +17,7 @@ export default function App() {
             style={{
               minHeight: '100vh',
               background: i === 0
-                ? 'linear-gradient(to bottom, transparent, #000000)'
+                ? 'linear-gradient(to bottom, transparent 0%, #000000 35vh)'
                 : '#000000',
               display: 'flex',
               alignItems: 'center',
