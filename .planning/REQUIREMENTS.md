@@ -35,9 +35,9 @@
 
 ### Experience
 
-- [ ] **EXP-01**: Timeline displays 4 experience entries (SMBC Summer 2026, IturanTech AI/ML Summer 2025, IturanTech DS Spring 2025, GenWell PM Spring 2025)
-- [ ] **EXP-02**: Each entry shows: title, company, date, description
-- [ ] **EXP-03**: Timeline is visually distinct from a plain list (vertical line, nodes, or similar)
+- [x] **EXP-01**: Timeline displays 4 experience entries (SMBC Summer 2026, IturanTech AI/ML Summer 2025, IturanTech DS Spring 2025, GenWell PM Spring 2025)
+- [x] **EXP-02**: Each entry shows: title, company, date, description
+- [x] **EXP-03**: Timeline is visually distinct from a plain list (vertical line, nodes, or similar)
 
 ### Education
 
@@ -53,17 +53,17 @@
 
 ### Projects
 
-- [ ] **PROJ-01**: Projects are displayed in a grid (not carousel) so all are visible without interaction
-- [ ] **PROJ-02**: Five projects shown: ViolenceNet, Realtime Renderer, Raytracer, Alma Metrics, Confection
-- [ ] **PROJ-03**: Each project card shows: title, tech stack tags, description, and link (where available)
-- [ ] **PROJ-04**: Project images are shown and expandable (lightbox or similar)
+- [x] **PROJ-01**: Projects are displayed in a grid (not carousel) so all are visible without interaction
+- [x] **PROJ-02**: Five projects shown: ViolenceNet, Realtime Renderer, Raytracer, Alma Metrics, Confection
+- [x] **PROJ-03**: Each project card shows: title, tech stack tags, description, and link (where available)
+- [x] **PROJ-04**: Project images are shown and expandable (lightbox or similar)
 
 ### Research
 
-- [ ] **RES-01**: Section is distinct from Projects — paper/lab presentation style
-- [ ] **RES-02**: Brown Visual Computing entry: Catacaustics neural network reconstruction of caustic light on curved surfaces
-- [ ] **RES-03**: University of Edinburgh Geometry Processing entry: DROK-inspired mesh manipulation with training-time constraints, targeting architectural software
-- [ ] **RES-04**: Each entry shows: group/lab name, topic description, and visual/thumbnail if available
+- [x] **RES-01**: Section is distinct from Projects — paper/lab presentation style
+- [x] **RES-02**: Brown Visual Computing entry: Catacaustics neural network reconstruction of caustic light on curved surfaces
+- [x] **RES-03**: University of Edinburgh Geometry Processing entry: DROK-inspired mesh manipulation with training-time constraints, targeting architectural software
+- [x] **RES-04**: Each entry shows: group/lab name, topic description, and visual/thumbnail if available
 
 ### Contact
 
@@ -129,23 +129,23 @@
 | ABOUT-01 | Phase 3 | Complete |
 | ABOUT-02 | Phase 3 | Complete |
 | ABOUT-03 | Phase 3 | Complete |
-| EXP-01 | Phase 3 | Pending |
-| EXP-02 | Phase 3 | Pending |
-| EXP-03 | Phase 3 | Pending |
+| EXP-01 | Phase 3 | Complete |
+| EXP-02 | Phase 3 | Complete |
+| EXP-03 | Phase 3 | Complete |
 | EDU-01 | Phase 3 | Complete |
 | EDU-02 | Phase 3 | Complete |
 | EDU-03 | Phase 3 | Complete |
 | SKILLS-01 | Phase 3 | Complete |
 | SKILLS-02 | Phase 3 | Complete |
 | SKILLS-03 | Phase 3 | Complete |
-| PROJ-01 | Phase 3 | Pending |
-| PROJ-02 | Phase 3 | Pending |
-| PROJ-03 | Phase 3 | Pending |
-| PROJ-04 | Phase 3 | Pending |
-| RES-01 | Phase 3 | Pending |
-| RES-02 | Phase 3 | Pending |
-| RES-03 | Phase 3 | Pending |
-| RES-04 | Phase 3 | Pending |
+| PROJ-01 | Phase 3 | Complete |
+| PROJ-02 | Phase 3 | Complete |
+| PROJ-03 | Phase 3 | Complete |
+| PROJ-04 | Phase 3 | Complete |
+| RES-01 | Phase 3 | Complete |
+| RES-02 | Phase 3 | Complete |
+| RES-03 | Phase 3 | Complete |
+| RES-04 | Phase 3 | Complete |
 | CONTACT-01 | Phase 3 | Complete |
 | CONTACT-02 | Phase 3 | Complete |
 | DEPLOY-01 | Phase 4 | Pending |

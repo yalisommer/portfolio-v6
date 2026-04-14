@@ -67,7 +67,7 @@ Plans:
 **Plans**: 4 plans
 Plans:
 - [x] 03-01-PLAN.md — Content data file + About, Education, Skills, Contact sections
-- [ ] 03-02-PLAN.md — Experience timeline, Projects expandable grid, Research lab-style sections
+- [x] 03-02-PLAN.md — Experience timeline, Projects expandable grid, Research lab-style sections
 - [ ] 03-03-PLAN.md — Three.js mesh background (install, assets, hook, component)
 - [ ] 03-04-PLAN.md — App.tsx integration wiring + visual verification checkpoint
 **UI hint**: yes
