@@ -74,6 +74,7 @@ None yet.
 | # | Description | Date | Commit | Directory |
 |---|-------------|------|--------|-----------|
 | 260414-pdr | Change section stub backgrounds from #0a0a0a to #000000 (pure black) in App.tsx | 2026-04-14 | 757492f | [260414-pdr-change-section-stub-backgrounds-from-0a0](./quick/260414-pdr-change-section-stub-backgrounds-from-0a0/) |
+| 260414-pep | Add transparent-to-black gradient overlay at top of content zone | 2026-04-14 | 335f769 | [260414-pep-add-a-transparent-to-black-gradient-over](./quick/260414-pep-add-a-transparent-to-black-gradient-over/) |
 
 ### Blockers/Concerns
 
