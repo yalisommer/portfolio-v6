@@ -1,0 +1,9 @@
+:root {
+  --ds-bg: #000000;
+  --ds-surface: #121212;
+  --ds-border: rgba(255, 255, 255, 0.12);
+  --ds-text-primary: #e0e0e0;
+  --ds-text-secondary: rgba(255, 255, 255, 0.55);
+  --ds-text-muted: rgba(255, 255, 255, 0.3);
+  --ds-accent: #ffffff;
+}

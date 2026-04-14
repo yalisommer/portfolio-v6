@@ -1,0 +1,47 @@
+/* Bounding-box corner brackets -- YOLOv8 aesthetic */
+.motif-corners {
+  position: relative;
+}
+.motif-corners::before,
+.motif-corners::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-color: rgba(255, 255, 255, 0.6);
+  border-style: solid;
+}
+.motif-corners::before {
+  top: 0;
+  left: 0;
+  border-width: 2px 0 0 2px; /* top-left corner */
+}
+.motif-corners::after {
+  bottom: 0;
+  right: 0;
+  border-width: 0 2px 2px 0; /* bottom-right corner */
+}
+
+/* Feature-point dots -- keypoint marker aesthetic */
+.motif-dots {
+  position: relative;
+}
+.motif-dots::before,
+.motif-dots::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+}
+.motif-dots::before {
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+.motif-dots::after {
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%);
+}
