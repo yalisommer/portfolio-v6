@@ -43,7 +43,10 @@ Plans:
   3. Clicking a nav link scrolls to the corresponding section
   4. The nav highlights the currently visible section as the user scrolls
   5. Placeholder sections fade/slide into view as the user scrolls down (IntersectionObserver + CSS transitions)
-**Plans**: TBD
+**Plans**: 2 plans
+Plans:
+- [ ] 02-01-PLAN.md — Design token files, self-hosted fonts, CV motifs, scroll-reveal hook, Section wrapper component
+- [ ] 02-02-PLAN.md — Sticky nav bar with active section tracking and bracket motif indicator
 **UI hint**: yes
 
 ### Phase 3: Content Sections
@@ -79,6 +82,6 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Layout Skeleton + WASM Gating | 1/1 | Complete   | 2026-04-14 |
-| 2. Design System + Navigation | 0/? | Not started | - |
+| 2. Design System + Navigation | 0/2 | Planning complete | - |
 | 3. Content Sections | 0/? | Not started | - |
 | 4. Deployment + QA | 0/? | Not started | - |
