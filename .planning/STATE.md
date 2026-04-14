@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: verifying
-stopped_at: Completed 02-design-system-navigation/02-02-PLAN.md
-last_updated: "2026-04-14T17:30:31.726Z"
+status: executing
+stopped_at: Completed 03-content-sections/03-01-PLAN.md
+last_updated: "2026-04-14T18:55:56.301Z"
 last_activity: 2026-04-14
 progress:
   total_phases: 4
   completed_phases: 2
-  total_plans: 3
-  completed_plans: 3
+  total_plans: 7
+  completed_plans: 4
   percent: 0
 ---
 
@@ -21,13 +21,13 @@ progress:
 See: .planning/PROJECT.md (updated 2026-04-14)
 
 **Core value:** A single scrollable page that opens with the aquarium demo and flows into all portfolio sections -- visually memorable and functionally complete.
-**Current focus:** Phase 02 — design-system-navigation
+**Current focus:** Phase 03 — content-sections
 
 ## Current Position
 
-Phase: 02 (design-system-navigation) — EXECUTING
-Plan: 2 of 2
-Status: Phase complete — ready for verification
+Phase: 03 (content-sections) — EXECUTING
+Plan: 2 of 4
+Status: Ready to execute
 Last activity: 2026-04-14
 
 Progress: [░░░░░░░░░░] 0%
@@ -55,6 +55,7 @@ Progress: [░░░░░░░░░░] 0%
 | Phase 01-layout-skeleton-wasm-gating P01 | 2 | 2 tasks | 3 files |
 | Phase 02-design-system-navigation P01 | 2min | 2 tasks | 13 files |
 | Phase 02-design-system-navigation P02 | checkpoint | 2 tasks | 2 files |
+| Phase 03-content-sections P01 | 4min | 2 tasks | 6 files |
 
 ## Accumulated Context
 
@@ -70,6 +71,9 @@ Recent decisions affecting current work:
 - [Phase 02-design-system-navigation]: Nav always mounted — CSS opacity/translateY handles show/hide; conditional mount would flicker and reset IntersectionObserver
 - [Phase 02-design-system-navigation]: Active link wraps <a> in <span className='motif-corners'> to preserve motifs.css layout-neutrality assumption
 - [Phase 02-design-system-navigation]: Native <a href='#id'> + scroll-behavior: smooth for nav links — no onClick handlers
+- [Phase 03-content-sections]: content.ts is single source of truth for all 7 section data; section components import from it
+- [Phase 03-content-sections]: SkillsSection uses 3-column grid (repeat(3,1fr)) for 6 categories -- 2 rows of 3 for visual balance
+- [Phase 03-content-sections]: ContactSection uses conditional spread for target=_blank -- external flag on ContactLink interface drives behavior
 
 ### Pending Todos
 
@@ -82,6 +86,7 @@ None yet.
 | 260414-pdr | Change section stub backgrounds from #0a0a0a to #000000 (pure black) in App.tsx | 2026-04-14 | 757492f | [260414-pdr-change-section-stub-backgrounds-from-0a0](./quick/260414-pdr-change-section-stub-backgrounds-from-0a0/) |
 | 260414-pep | Add transparent-to-black gradient overlay at top of content zone | 2026-04-14 | 335f769 | [260414-pep-add-a-transparent-to-black-gradient-over](./quick/260414-pep-add-a-transparent-to-black-gradient-over/) |
 | 260414-pie | Fix scroll fade — first section transparent-to-black, fish show through | 2026-04-14 | eb6e449 | [260414-pie-fix-the-scroll-fade-remove-the-absolute-](./quick/260414-pie-fix-the-scroll-fade-remove-the-absolute-/) |
+| 260414-rr6 | Fix fast-scroll background bleed: goldfish showing through lower sections | 2026-04-14 | — | [260414-rr6-fix-scroll-fast-background-disappears-go](./quick/260414-rr6-fix-scroll-fast-background-disappears-go/) |
 
 ### Blockers/Concerns
 
@@ -92,6 +97,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-14T17:30:31.724Z
-Stopped at: Completed 02-design-system-navigation/02-02-PLAN.md
+Last session: 2026-04-14T18:55:56.298Z
+Stopped at: Completed 03-content-sections/03-01-PLAN.md
 Resume file: None

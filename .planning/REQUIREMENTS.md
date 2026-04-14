@@ -29,9 +29,9 @@
 
 ### About Me
 
-- [ ] **ABOUT-01**: Section displays bio text (Yali Sommer, Brown University junior, Math & CS, Visual Computing focus)
-- [ ] **ABOUT-02**: Section includes one or more photos
-- [ ] **ABOUT-03**: Section links inline to other portfolio sections
+- [x] **ABOUT-01**: Section displays bio text (Yali Sommer, Brown University junior, Math & CS, Visual Computing focus)
+- [x] **ABOUT-02**: Section includes one or more photos
+- [x] **ABOUT-03**: Section links inline to other portfolio sections
 
 ### Experience
 
@@ -41,15 +41,15 @@
 
 ### Education
 
-- [ ] **EDU-01**: Section shows Brown University (2023–27), dual concentration Math & CS, GPA 3.94
-- [ ] **EDU-02**: Coursework lists for both Math and CS concentrations are visible
-- [ ] **EDU-03**: Teaching assistant role (Data Structures & Algorithms) is shown
+- [x] **EDU-01**: Section shows Brown University (2023–27), dual concentration Math & CS, GPA 3.94
+- [x] **EDU-02**: Coursework lists for both Math and CS concentrations are visible
+- [x] **EDU-03**: Teaching assistant role (Data Structures & Algorithms) is shown
 
 ### Skills
 
-- [ ] **SKILLS-01**: Skills are displayed as categorized tag groups (not bars or graph nodes)
-- [ ] **SKILLS-02**: Six categories represented: Languages, Vision/Graphics, ML/AI, Software Engineering, Data, Teamwork/Teaching
-- [ ] **SKILLS-03**: Category labels or groupings are visually scannable at a glance
+- [x] **SKILLS-01**: Skills are displayed as categorized tag groups (not bars or graph nodes)
+- [x] **SKILLS-02**: Six categories represented: Languages, Vision/Graphics, ML/AI, Software Engineering, Data, Teamwork/Teaching
+- [x] **SKILLS-03**: Category labels or groupings are visually scannable at a glance
 
 ### Projects
 
@@ -67,8 +67,8 @@
 
 ### Contact
 
-- [ ] **CONTACT-01**: Email link (yali_sommer@brown.edu) displayed and clickable (mailto:)
-- [ ] **CONTACT-02**: LinkedIn profile link displayed and opens in new tab
+- [x] **CONTACT-01**: Email link (yali_sommer@brown.edu) displayed and clickable (mailto:)
+- [x] **CONTACT-02**: LinkedIn profile link displayed and opens in new tab
 
 ### Deployment Readiness
 
@@ -126,18 +126,18 @@
 | NAV-01 | Phase 2 | Complete |
 | NAV-02 | Phase 2 | Complete |
 | NAV-03 | Phase 2 | Complete |
-| ABOUT-01 | Phase 3 | Pending |
-| ABOUT-02 | Phase 3 | Pending |
-| ABOUT-03 | Phase 3 | Pending |
+| ABOUT-01 | Phase 3 | Complete |
+| ABOUT-02 | Phase 3 | Complete |
+| ABOUT-03 | Phase 3 | Complete |
 | EXP-01 | Phase 3 | Pending |
 | EXP-02 | Phase 3 | Pending |
 | EXP-03 | Phase 3 | Pending |
-| EDU-01 | Phase 3 | Pending |
-| EDU-02 | Phase 3 | Pending |
-| EDU-03 | Phase 3 | Pending |
-| SKILLS-01 | Phase 3 | Pending |
-| SKILLS-02 | Phase 3 | Pending |
-| SKILLS-03 | Phase 3 | Pending |
+| EDU-01 | Phase 3 | Complete |
+| EDU-02 | Phase 3 | Complete |
+| EDU-03 | Phase 3 | Complete |
+| SKILLS-01 | Phase 3 | Complete |
+| SKILLS-02 | Phase 3 | Complete |
+| SKILLS-03 | Phase 3 | Complete |
 | PROJ-01 | Phase 3 | Pending |
 | PROJ-02 | Phase 3 | Pending |
 | PROJ-03 | Phase 3 | Pending |
@@ -146,8 +146,8 @@
 | RES-02 | Phase 3 | Pending |
 | RES-03 | Phase 3 | Pending |
 | RES-04 | Phase 3 | Pending |
-| CONTACT-01 | Phase 3 | Pending |
-| CONTACT-02 | Phase 3 | Pending |
+| CONTACT-01 | Phase 3 | Complete |
+| CONTACT-02 | Phase 3 | Complete |
 | DEPLOY-01 | Phase 4 | Pending |
 | DEPLOY-02 | Phase 4 | Pending |
 | DEPLOY-03 | Phase 4 | Pending |
