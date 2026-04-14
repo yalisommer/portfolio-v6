@@ -68,7 +68,7 @@ Plans:
 Plans:
 - [x] 03-01-PLAN.md — Content data file + About, Education, Skills, Contact sections
 - [x] 03-02-PLAN.md — Experience timeline, Projects expandable grid, Research lab-style sections
-- [ ] 03-03-PLAN.md — Three.js mesh background (install, assets, hook, component)
+- [x] 03-03-PLAN.md — Three.js mesh background (install, assets, hook, component)
 - [ ] 03-04-PLAN.md — App.tsx integration wiring + visual verification checkpoint
 **UI hint**: yes
 
@@ -91,5 +91,5 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 |-------|----------------|--------|-----------|
 | 1. Layout Skeleton + WASM Gating | 1/1 | Complete   | 2026-04-14 |
 | 2. Design System + Navigation | 2/2 | Complete   | 2026-04-14 |
-| 3. Content Sections | 1/4 | In Progress|  |
+| 3. Content Sections | 3/4 | In Progress|  |
 | 4. Deployment + QA | 0/? | Not started | - |
