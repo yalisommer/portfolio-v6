@@ -50,9 +50,9 @@ Plans:
 **UI hint**: yes
 
 ### Phase 3: Content Sections
-**Goal**: All seven portfolio sections are built with real content, each visually distinct and using the established design system
+**Goal**: All seven portfolio sections are built with real content, each visually distinct and using the established design system, with animated 3D research mesh backgrounds bringing the graphics identity into the scroll experience
 **Depends on**: Phase 2
-**Requirements**: ABOUT-01, ABOUT-02, ABOUT-03, EXP-01, EXP-02, EXP-03, EDU-01, EDU-02, EDU-03, SKILLS-01, SKILLS-02, SKILLS-03, PROJ-01, PROJ-02, PROJ-03, PROJ-04, RES-01, RES-02, RES-03, RES-04, CONTACT-01, CONTACT-02
+**Requirements**: ABOUT-01, ABOUT-02, ABOUT-03, EXP-01, EXP-02, EXP-03, EDU-01, EDU-02, EDU-03, SKILLS-01, SKILLS-02, SKILLS-03, PROJ-01, PROJ-02, PROJ-03, PROJ-04, RES-01, RES-02, RES-03, RES-04, CONTACT-01, CONTACT-02, MESH-01, MESH-02, MESH-03
 **Success Criteria** (what must be TRUE):
   1. About Me section displays bio text with photo(s) and inline links to other portfolio sections
   2. Experience section shows 4 entries in a visually distinct timeline layout (not a plain list) with title, company, date, and description per entry
@@ -61,6 +61,9 @@ Plans:
   5. Projects section shows a grid of 5 project cards, each with title, tech stack tags, description, link, and expandable image
   6. Research section is visually distinct from Projects with lab/institution presentation style, showing both Catacaustics and Edinburgh entries with group name, description, and visual/thumbnail
   7. Contact section shows a clickable email link (mailto:) and a LinkedIn link that opens in a new tab
+  8. Iconic 3D research meshes (Stanford bunny, dragon, Lucy, etc.) rendered as low-poly wireframes or flat-shaded polygons drift slowly in the background of the lower content sections (MESH-01)
+  9. The mesh background runs on a WebGL canvas layer at low opacity and does not degrade scroll performance or the WASM inference loop (MESH-02)
+  10. Meshes are visually coherent with the monochrome design system — white/grey wireframe or flat-shaded at low opacity (MESH-03)
 **Plans**: TBD
 **UI hint**: yes
 
@@ -85,14 +88,3 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 | 2. Design System + Navigation | 2/2 | Complete   | 2026-04-14 |
 | 3. Content Sections | 0/? | Not started | - |
 | 4. Deployment + QA | 0/? | Not started | - |
-
-## Backlog
-
-### Phase 999.1: Animated 3D Research Mesh Background (BACKLOG)
-
-**Goal:** Iconic graphics research meshes (Stanford bunny, dragon, Lucy, etc.) rendered as low-poly wireframes or flat-shaded polygons slowly drifting behind the lower content sections (Experience, Projects, Research). WebGL canvas layer at low opacity — ties the CV/graphics identity into the scroll experience without distracting from text.
-**Requirements:** TBD
-**Plans:** 0 plans
-
-Plans:
-- [ ] TBD (promote with /gsd:review-backlog when ready)
