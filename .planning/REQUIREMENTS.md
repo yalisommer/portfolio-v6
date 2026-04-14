@@ -7,11 +7,11 @@
 
 ### Layout
 
-- [ ] **LAYOUT-01**: Aquarium hero section fills the full viewport at the top of the page
-- [ ] **LAYOUT-02**: Content sections scroll continuously below the aquarium (no page-snap)
-- [ ] **LAYOUT-03**: Aquarium video/canvas stays mounted (not unmounted) as user scrolls away
-- [ ] **LAYOUT-04**: Fish detection inference pauses automatically when aquarium hero is not in viewport
-- [ ] **LAYOUT-05**: Fish detection inference resumes when aquarium hero re-enters viewport
+- [x] **LAYOUT-01**: Aquarium hero section fills the full viewport at the top of the page
+- [x] **LAYOUT-02**: Content sections scroll continuously below the aquarium (no page-snap)
+- [x] **LAYOUT-03**: Aquarium video/canvas stays mounted (not unmounted) as user scrolls away
+- [x] **LAYOUT-04**: Fish detection inference pauses automatically when aquarium hero is not in viewport
+- [x] **LAYOUT-05**: Fish detection inference resumes when aquarium hero re-enters viewport
 
 ### Navigation
 
@@ -113,11 +113,11 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| LAYOUT-01 | Phase 1 | Pending |
-| LAYOUT-02 | Phase 1 | Pending |
-| LAYOUT-03 | Phase 1 | Pending |
-| LAYOUT-04 | Phase 1 | Pending |
-| LAYOUT-05 | Phase 1 | Pending |
+| LAYOUT-01 | Phase 1 | Complete |
+| LAYOUT-02 | Phase 1 | Complete |
+| LAYOUT-03 | Phase 1 | Complete |
+| LAYOUT-04 | Phase 1 | Complete |
+| LAYOUT-05 | Phase 1 | Complete |
 | DS-01 | Phase 2 | Pending |
 | DS-02 | Phase 2 | Pending |
 | DS-03 | Phase 2 | Pending |

@@ -12,7 +12,7 @@ Portfolio v6 transforms the existing aquarium demo into a full single-page portf
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Layout Skeleton + WASM Gating** - Two-zone scroll layout with IntersectionObserver-gated inference pause/resume
+- [x] **Phase 1: Layout Skeleton + WASM Gating** - Two-zone scroll layout with IntersectionObserver-gated inference pause/resume (completed 2026-04-14)
 - [ ] **Phase 2: Design System + Navigation** - Monochrome token system, self-hosted fonts, CV motifs, sticky nav with active section tracking
 - [ ] **Phase 3: Content Sections** - All 7 portfolio sections (About, Experience, Education, Skills, Projects, Research, Contact)
 - [ ] **Phase 4: Deployment + QA** - Production build, COOP/COEP headers, fallback video verification
@@ -31,7 +31,7 @@ Decimal phases appear between their surrounding integers in numeric order.
   5. Fish detection bounding boxes resume rendering when user scrolls back to the hero (inference resumed)
 **Plans**: 1 plan
 Plans:
-- [ ] 01-01-PLAN.md — Enable scroll layout, add 7 section stubs, wire IntersectionObserver inference gating
+- [x] 01-01-PLAN.md — Enable scroll layout, add 7 section stubs, wire IntersectionObserver inference gating
 
 ### Phase 2: Design System + Navigation
 **Goal**: A locked visual foundation (colors, typography, motifs, animations) and a sticky nav that lets users jump to any section and see where they are
@@ -78,7 +78,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Layout Skeleton + WASM Gating | 0/1 | Planning complete | - |
+| 1. Layout Skeleton + WASM Gating | 1/1 | Complete   | 2026-04-14 |
 | 2. Design System + Navigation | 0/? | Not started | - |
 | 3. Content Sections | 0/? | Not started | - |
 | 4. Deployment + QA | 0/? | Not started | - |
