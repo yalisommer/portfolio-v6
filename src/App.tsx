@@ -16,7 +16,7 @@ export default function App() {
             id={id}
             style={{
               minHeight: '100vh',
-              background: '#0a0a0a',
+              background: '#000000',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
