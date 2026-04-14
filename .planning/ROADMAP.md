@@ -45,7 +45,7 @@ Plans:
   5. Placeholder sections fade/slide into view as the user scrolls down (IntersectionObserver + CSS transitions)
 **Plans**: 2 plans
 Plans:
-- [ ] 02-01-PLAN.md — Design token files, self-hosted fonts, CV motifs, scroll-reveal hook, Section wrapper component
+- [x] 02-01-PLAN.md — Design token files, self-hosted fonts, CV motifs, scroll-reveal hook, Section wrapper component
 - [ ] 02-02-PLAN.md — Sticky nav bar with active section tracking and bracket motif indicator
 **UI hint**: yes
 

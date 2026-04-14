@@ -21,11 +21,11 @@
 
 ### Design System
 
-- [ ] **DS-01**: Design token file defines monochrome color scale (#121212 bg, #e0e0e0 primary text, grays hierarchy)
-- [ ] **DS-02**: Self-hosted Inter (variable) and JetBrains Mono (WOFF2) fonts, no external CDN
-- [ ] **DS-03**: CV/graphics-inspired motifs defined (bounding-box borders, scan-line textures, feature-point dots, grid overlays) as reusable CSS classes
-- [ ] **DS-04**: Scroll-reveal animation pattern: sections fade/slide in via IntersectionObserver + CSS transitions (no animation library)
-- [ ] **DS-05**: Section wrapper component provides consistent vertical padding and max-width constraints
+- [x] **DS-01**: Design token file defines monochrome color scale (#121212 bg, #e0e0e0 primary text, grays hierarchy)
+- [x] **DS-02**: Self-hosted Inter (variable) and JetBrains Mono (WOFF2) fonts, no external CDN
+- [x] **DS-03**: CV/graphics-inspired motifs defined (bounding-box borders, scan-line textures, feature-point dots, grid overlays) as reusable CSS classes
+- [x] **DS-04**: Scroll-reveal animation pattern: sections fade/slide in via IntersectionObserver + CSS transitions (no animation library)
+- [x] **DS-05**: Section wrapper component provides consistent vertical padding and max-width constraints
 
 ### About Me
 
@@ -118,11 +118,11 @@
 | LAYOUT-03 | Phase 1 | Complete |
 | LAYOUT-04 | Phase 1 | Complete |
 | LAYOUT-05 | Phase 1 | Complete |
-| DS-01 | Phase 2 | Pending |
-| DS-02 | Phase 2 | Pending |
-| DS-03 | Phase 2 | Pending |
-| DS-04 | Phase 2 | Pending |
-| DS-05 | Phase 2 | Pending |
+| DS-01 | Phase 2 | Complete |
+| DS-02 | Phase 2 | Complete |
+| DS-03 | Phase 2 | Complete |
+| DS-04 | Phase 2 | Complete |
+| DS-05 | Phase 2 | Complete |
 | NAV-01 | Phase 2 | Pending |
 | NAV-02 | Phase 2 | Pending |
 | NAV-03 | Phase 2 | Pending |
