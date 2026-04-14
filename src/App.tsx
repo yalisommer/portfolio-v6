@@ -26,7 +26,7 @@ export default function App() {
           >
             <h2 style={{
               fontSize: '2rem',
-              color: 'rgba(255,255,255,0.15)',
+              color: 'rgba(255,255,255,0.55)',
               textTransform: 'uppercase',
               letterSpacing: '0.2em',
             }}>
