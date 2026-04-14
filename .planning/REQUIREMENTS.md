@@ -15,9 +15,9 @@
 
 ### Navigation
 
-- [ ] **NAV-01**: Sticky navigation bar appears after user scrolls past the aquarium hero
-- [ ] **NAV-02**: Nav links allow jumping to any section (About Me, Experience, Education, Skills, Projects, Research, Contact Me)
-- [ ] **NAV-03**: Active section is highlighted in the nav as user scrolls
+- [x] **NAV-01**: Sticky navigation bar appears after user scrolls past the aquarium hero
+- [x] **NAV-02**: Nav links allow jumping to any section (About Me, Experience, Education, Skills, Projects, Research, Contact Me)
+- [x] **NAV-03**: Active section is highlighted in the nav as user scrolls
 
 ### Design System
 
@@ -123,9 +123,9 @@
 | DS-03 | Phase 2 | Complete |
 | DS-04 | Phase 2 | Complete |
 | DS-05 | Phase 2 | Complete |
-| NAV-01 | Phase 2 | Pending |
-| NAV-02 | Phase 2 | Pending |
-| NAV-03 | Phase 2 | Pending |
+| NAV-01 | Phase 2 | Complete |
+| NAV-02 | Phase 2 | Complete |
+| NAV-03 | Phase 2 | Complete |
 | ABOUT-01 | Phase 3 | Pending |
 | ABOUT-02 | Phase 3 | Pending |
 | ABOUT-03 | Phase 3 | Pending |

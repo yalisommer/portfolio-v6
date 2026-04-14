@@ -13,7 +13,7 @@ Portfolio v6 transforms the existing aquarium demo into a full single-page portf
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Layout Skeleton + WASM Gating** - Two-zone scroll layout with IntersectionObserver-gated inference pause/resume (completed 2026-04-14)
-- [ ] **Phase 2: Design System + Navigation** - Monochrome token system, self-hosted fonts, CV motifs, sticky nav with active section tracking
+- [x] **Phase 2: Design System + Navigation** - Monochrome token system, self-hosted fonts, CV motifs, sticky nav with active section tracking (completed 2026-04-14)
 - [ ] **Phase 3: Content Sections** - All 7 portfolio sections (About, Experience, Education, Skills, Projects, Research, Contact)
 - [ ] **Phase 4: Deployment + QA** - Production build, COOP/COEP headers, fallback video verification
 
@@ -46,7 +46,7 @@ Plans:
 **Plans**: 2 plans
 Plans:
 - [x] 02-01-PLAN.md — Design token files, self-hosted fonts, CV motifs, scroll-reveal hook, Section wrapper component
-- [ ] 02-02-PLAN.md — Sticky nav bar with active section tracking and bracket motif indicator
+- [x] 02-02-PLAN.md — Sticky nav bar with active section tracking and bracket motif indicator
 **UI hint**: yes
 
 ### Phase 3: Content Sections
@@ -82,6 +82,6 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Layout Skeleton + WASM Gating | 1/1 | Complete   | 2026-04-14 |
-| 2. Design System + Navigation | 0/2 | Planning complete | - |
+| 2. Design System + Navigation | 2/2 | Complete   | 2026-04-14 |
 | 3. Content Sections | 0/? | Not started | - |
 | 4. Deployment + QA | 0/? | Not started | - |

@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: executing
-stopped_at: Completed 02-design-system-navigation/02-01-PLAN.md
-last_updated: "2026-04-14T17:02:54.826Z"
+status: verifying
+stopped_at: Completed 02-design-system-navigation/02-02-PLAN.md
+last_updated: "2026-04-14T17:30:31.726Z"
 last_activity: 2026-04-14
 progress:
   total_phases: 4
-  completed_phases: 1
+  completed_phases: 2
   total_plans: 3
-  completed_plans: 2
+  completed_plans: 3
   percent: 0
 ---
 
@@ -27,7 +27,7 @@ See: .planning/PROJECT.md (updated 2026-04-14)
 
 Phase: 02 (design-system-navigation) — EXECUTING
 Plan: 2 of 2
-Status: Ready to execute
+Status: Phase complete — ready for verification
 Last activity: 2026-04-14
 
 Progress: [░░░░░░░░░░] 0%
@@ -54,6 +54,7 @@ Progress: [░░░░░░░░░░] 0%
 *Updated after each plan completion*
 | Phase 01-layout-skeleton-wasm-gating P01 | 2 | 2 tasks | 3 files |
 | Phase 02-design-system-navigation P01 | 2min | 2 tasks | 13 files |
+| Phase 02-design-system-navigation P02 | checkpoint | 2 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -66,6 +67,9 @@ Recent decisions affecting current work:
 - [Roadmap]: Phase 3 bundles all 7 content sections (22 requirements) into one phase since they share the same Section wrapper pattern and design system from Phase 2.
 - [Phase 01-layout-skeleton-wasm-gating]: Initialize heroVisible=true to avoid detection flash on load; IntersectionObserver threshold 0.1 for fast inference gating; content zone zIndex:10 for proper scroll stacking
 - [Phase 02-design-system-navigation]: Initialize useScrollReveal revealed=true for prefers-reduced-motion; gradient overlay as separate div to keep Section uniform; Section ref cast for strict TypeScript compatibility
+- [Phase 02-design-system-navigation]: Nav always mounted — CSS opacity/translateY handles show/hide; conditional mount would flicker and reset IntersectionObserver
+- [Phase 02-design-system-navigation]: Active link wraps <a> in <span className='motif-corners'> to preserve motifs.css layout-neutrality assumption
+- [Phase 02-design-system-navigation]: Native <a href='#id'> + scroll-behavior: smooth for nav links — no onClick handlers
 
 ### Pending Todos
 
@@ -88,6 +92,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-14T17:02:54.823Z
-Stopped at: Completed 02-design-system-navigation/02-01-PLAN.md
+Last session: 2026-04-14T17:30:31.724Z
+Stopped at: Completed 02-design-system-navigation/02-02-PLAN.md
 Resume file: None
