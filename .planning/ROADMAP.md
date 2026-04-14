@@ -64,7 +64,12 @@ Plans:
   8. Iconic 3D research meshes (Stanford bunny, dragon, Lucy, etc.) rendered as low-poly wireframes or flat-shaded polygons drift slowly in the background of the lower content sections (MESH-01)
   9. The mesh background runs on a WebGL canvas layer at low opacity and does not degrade scroll performance or the WASM inference loop (MESH-02)
   10. Meshes are visually coherent with the monochrome design system — white/grey wireframe or flat-shaded at low opacity (MESH-03)
-**Plans**: TBD
+**Plans**: 4 plans
+Plans:
+- [ ] 03-01-PLAN.md — Content data file + About, Education, Skills, Contact sections
+- [ ] 03-02-PLAN.md — Experience timeline, Projects expandable grid, Research lab-style sections
+- [ ] 03-03-PLAN.md — Three.js mesh background (install, assets, hook, component)
+- [ ] 03-04-PLAN.md — App.tsx integration wiring + visual verification checkpoint
 **UI hint**: yes
 
 ### Phase 4: Deployment + QA
@@ -86,5 +91,5 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 |-------|----------------|--------|-----------|
 | 1. Layout Skeleton + WASM Gating | 1/1 | Complete   | 2026-04-14 |
 | 2. Design System + Navigation | 2/2 | Complete   | 2026-04-14 |
-| 3. Content Sections | 0/? | Not started | - |
+| 3. Content Sections | 0/4 | Planned | - |
 | 4. Deployment + QA | 0/? | Not started | - |
