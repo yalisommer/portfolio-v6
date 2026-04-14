@@ -276,8 +276,8 @@ export function useMeshBackground(
 
     // ── Resize handler ───────────────────────────────────────────────────
     function onResize() {
-      const w = canvas.clientWidth
-      const h = canvas.clientHeight
+      const w = canvas!.clientWidth
+      const h = canvas!.clientHeight
       renderer.setSize(w, h)
       camera.aspect = w / h
       camera.updateProjectionMatrix()
