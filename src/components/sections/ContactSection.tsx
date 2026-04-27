@@ -1,5 +1,5 @@
 import { DS } from '../../styles/tokens'
-import { contactLinks } from '../../data/content'
+import { contactLinks, contactIntro, contactTerminal } from '../../data/content'
 
 const sectionHeadingStyle: React.CSSProperties = {
   fontFamily: "'JetBrains Mono', monospace",
@@ -34,8 +34,7 @@ export default function ContactSection() {
             color: DS.textSecondary,
             marginBottom: '2rem',
           }}>
-            Open to opportunities in ML engineering and computer vision research. Happy to chat
-            about graphics, systems, or building things that run fast.
+            {contactIntro}
           </p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             {contactLinks.map(link => (
@@ -73,22 +72,19 @@ export default function ContactSection() {
           </div>
         </div>
 
-        {/* Right column: terminal-style block */}
+        {/* Right column: info block — sourced from content.md */}
         <div style={{
           color: DS.textMuted,
           fontSize: '0.8rem',
           lineHeight: 1.8,
           fontFamily: "'JetBrains Mono', monospace",
         }}>
-          <p style={{ marginBottom: '0.5rem', color: DS.textSecondary }}>$ whoami</p>
-          <p>yali_sommer</p>
-          <p style={{ marginTop: '1rem', marginBottom: '0.5rem', color: DS.textSecondary }}>$ cat .profile</p>
-          <p>location: Providence, RI</p>
-          <p>school: Brown University</p>
-          <p>status: seeking_opportunities_2026</p>
-          <p>interests: [cv, ml, graphics, wasm]</p>
-          <p style={{ marginTop: '1rem', marginBottom: '0.5rem', color: DS.textSecondary }}>$ echo $FOCUS</p>
-          <p>ML_Engineering Computer_Vision Computer_Graphics</p>
+          <p style={{ color: DS.textSecondary }}>{contactTerminal.whoami}</p>
+          <p>location: {contactTerminal.location}</p>
+          <p>school: {contactTerminal.school}</p>
+          <p>status: {contactTerminal.status}</p>
+          <p>interests: {contactTerminal.interests}</p>
+          <p style={{ marginTop: '1rem' }}>{contactTerminal.focus}</p>
         </div>
       </div>
     </div>

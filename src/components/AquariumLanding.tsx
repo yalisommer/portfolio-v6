@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState } from 'react'
 import { useVideoStream } from '../hooks/useVideoStream'
 import { useFishDetection } from '../hooks/useFishDetection'
 import AquariumVideo from './AquariumVideo'
@@ -12,37 +12,19 @@ const statusColor: Record<string, string> = {
 }
 
 interface Props {
-  onHeroVisibility: (visible: boolean) => void
   heroVisible: boolean
 }
 
-export default function AquariumLanding({ onHeroVisibility, heroVisible }: Props) {
+export default function AquariumLanding({ heroVisible }: Props) {
   const { videoRef, streamStatus } = useVideoStream()
   const { status, runDetection } = useFishDetection()
   const [detectionOn, setDetectionOn] = useState(true)
-
-  const heroRef = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    const el = heroRef.current
-    if (!el) return
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        onHeroVisibility(entry.isIntersecting)
-      },
-      { threshold: 0.1 }
-    )
-
-    observer.observe(el)
-    return () => observer.disconnect()
-  }, [onHeroVisibility])
 
   const canDetect = status === 'ready'
   const isActive = canDetect && detectionOn && heroVisible
 
   return (
-    <div ref={heroRef} style={{ position: 'relative', width: '100vw', height: '100vh' }}>
+    <div style={{ position: 'relative', width: '100vw', height: '100vh' }}>
 
       {/* Layer 0: video */}
       <AquariumVideo videoRef={videoRef} streamStatus={streamStatus} />
@@ -56,7 +38,7 @@ export default function AquariumLanding({ onHeroVisibility, heroVisible }: Props
 
       {/* Layer 2: portfolio UI */}
 
-      {/* Bottom gradient */}
+      {/* Bottom gradient — darkens lower aquarium; covered by rising backdrop when scrolling */}
       <div style={{
         position: 'fixed',
         bottom: 0,
@@ -68,7 +50,7 @@ export default function AquariumLanding({ onHeroVisibility, heroVisible }: Props
         pointerEvents: 'none',
       }} />
 
-      {/* Hero text */}
+      {/* Hero text — covered by the rising backdrop; no self-fade */}
       <div style={{
         position: 'fixed',
         bottom: '10%',
@@ -77,6 +59,7 @@ export default function AquariumLanding({ onHeroVisibility, heroVisible }: Props
         zIndex: 3,
         textAlign: 'center',
         padding: '0 2rem',
+        pointerEvents: heroVisible ? 'auto' as const : 'none' as const,
       }}>
         <h1 style={{
           fontSize: 'clamp(2.5rem, 8vw, 6rem)',

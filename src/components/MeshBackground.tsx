@@ -2,7 +2,7 @@ import { useRef } from 'react'
 import { useMeshBackground } from '../hooks/useMeshBackground'
 
 interface Props {
-  active: boolean  // true when content zone is visible (!heroVisible)
+  active: boolean  // true when past the hero; gates rendering and opacity
 }
 
 export default function MeshBackground({ active }: Props) {
@@ -14,14 +14,13 @@ export default function MeshBackground({ active }: Props) {
       ref={canvasRef}
       style={{
         position: 'fixed',
-        top: 0,
-        left: 0,
+        inset: 0,
         width: '100vw',
         height: '100vh',
-        zIndex: 5,             // Above aquarium (zIndex 0) but below content zone (zIndex 10)
-        pointerEvents: 'none', // Scroll events pass through to content
+        zIndex: 5,
+        pointerEvents: 'none',
         opacity: active ? 1 : 0,
-        transition: 'opacity 0.6s ease',
+        willChange: 'transform',
       }}
     />
   )

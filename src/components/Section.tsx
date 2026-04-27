@@ -7,7 +7,7 @@ interface Props {
 
 const sectionStyle: React.CSSProperties = {
   minHeight: '100vh',
-  background: 'var(--ds-bg)',
+  background: 'transparent',  // lets mesh canvas (zIndex 5) show through
   padding: '6rem 2rem',
   display: 'flex',
   flexDirection: 'column',
@@ -33,9 +33,9 @@ export default function Section({ id, children }: Props) {
     <section
       id={id}
       ref={ref as React.RefObject<HTMLElement>}
-      style={{ ...sectionStyle, ...revealStyle }}
+      style={sectionStyle}
     >
-      <div style={innerStyle}>
+      <div style={{ ...innerStyle, ...revealStyle }}>
         {children}
       </div>
     </section>

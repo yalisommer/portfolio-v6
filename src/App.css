@@ -21,3 +21,14 @@ html, body {
   width: 100%;
   min-height: 100%;
 }
+
+/* Links injected via dangerouslySetInnerHTML in AboutSection bio */
+.about-bio a {
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+.about-bio a:hover {
+  color: rgba(255, 255, 255, 0.85);
+}

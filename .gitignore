@@ -4,6 +4,23 @@ node_modules/
 # Build output
 dist/
 
+# ORT WASM assets (regenerated from node_modules at build time via vite-plugin-static-copy)
+public/ort-wasm-simd-threaded.asyncify.wasm
+public/ort-wasm-simd-threaded.jsep.wasm
+public/ort-wasm-simd-threaded.jsep.mjs
+public/ort-wasm-simd-threaded.jspi.wasm
+public/ort-wasm-simd-threaded.mjs
+public/ort-wasm-simd-threaded.wasm
+
+# ML training artifacts (not needed for web app)
+aquarium_yolo/
+runs/
+weights/
+yolov8n.pt
+
+# Claude local config
+.claude/
+
 # Editor
 .vscode/
 .idea/

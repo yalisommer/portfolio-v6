@@ -1,9 +1,5 @@
 import { useState, useEffect } from 'react'
 
-interface Props {
-  heroVisible: boolean
-}
-
 const SECTIONS = [
   { id: 'about', label: 'ABOUT' },
   { id: 'experience', label: 'EXPERIENCE' },
@@ -14,7 +10,7 @@ const SECTIONS = [
   { id: 'contact', label: 'CONTACT' },
 ] as const
 
-const navStyle: React.CSSProperties = {
+const navBaseStyle: React.CSSProperties = {
   position: 'fixed',
   top: 0,
   left: 0,
@@ -30,6 +26,7 @@ const navStyle: React.CSSProperties = {
   WebkitBackdropFilter: 'blur(12px)',
   borderBottom: '1px solid rgba(255, 255, 255, 0.12)',
   padding: '0 2rem',
+  transition: 'opacity 0.3s ease, transform 0.3s ease',
 }
 
 const linkBaseStyle: React.CSSProperties = {
@@ -41,6 +38,10 @@ const linkBaseStyle: React.CSSProperties = {
   transition: 'color 0.2s ease',
   padding: '4px 6px',
   display: 'inline-block',
+}
+
+interface Props {
+  heroVisible: boolean
 }
 
 export default function Nav({ heroVisible }: Props) {
@@ -71,16 +72,15 @@ export default function Nav({ heroVisible }: Props) {
     return () => observer.disconnect()
   }, [])
 
-  const visibilityStyle: React.CSSProperties = {
-    ...navStyle,
+  const navStyle: React.CSSProperties = {
+    ...navBaseStyle,
     opacity: heroVisible ? 0 : 1,
-    transform: heroVisible ? 'translateY(-100%)' : 'translateY(0)',
-    pointerEvents: heroVisible ? 'none' as const : 'auto' as const,
-    transition: 'opacity 0.2s ease-out, transform 0.2s ease-out',
+    transform: heroVisible ? 'translateY(16px)' : 'translateY(0)',
+    pointerEvents: heroVisible ? 'none' : 'auto',
   }
 
   return (
-    <nav style={visibilityStyle}>
+    <nav style={navStyle}>
       {SECTIONS.map(({ id, label }) => {
         const isActive = activeSection === id
         return isActive ? (
