@@ -24,7 +24,7 @@ export interface EducationData {
   years: string
   degree: string
   gpa: string
-  ta: { course: string; code: string }
+  tas: { course: string; code: string }[]
   csCourses: string[]
   mathCourses: string[]
 }

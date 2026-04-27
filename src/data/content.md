@@ -81,9 +81,11 @@ education:
   years: "2023 – 2027"
   degree: B.Sc. Mathematics & Computer Science
   gpa: "3.94"
-  ta:
-    course: Data Structures & Algorithms
-    code: CSCI 0200
+  tas:
+    - course: Data Structures & Algorithms
+      code: CSCI 0200
+    - course: Introduction to Computer Graphics
+      code: CSCI 1230
   csCourses:
     - CSCI 1430 Computer Vision
     - CSCI 1470 Deep Learning

@@ -72,14 +72,17 @@ export default function EducationSection() {
             padding: '0.75rem 1rem',
           }}>
             <p style={{ ...labelStyle, marginBottom: '0.25rem' }}>Teaching Assistant</p>
-            <p style={{
-              fontFamily: "'JetBrains Mono', monospace",
-              fontSize: '0.75rem',
-              color: DS.textSecondary,
-              letterSpacing: '0.05em',
-            }}>
-              {educationData.ta.code} &mdash; {educationData.ta.course}
-            </p>
+            {educationData.tas.map((ta) => (
+              <p key={ta.code} style={{
+                fontFamily: "'JetBrains Mono', monospace",
+                fontSize: '0.75rem',
+                color: DS.textSecondary,
+                letterSpacing: '0.05em',
+                marginBottom: '0.1rem',
+              }}>
+                {ta.code} &mdash; {ta.course}
+              </p>
+            ))}
           </div>
         </div>
 
