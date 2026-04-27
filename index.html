@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yali Sommer</title>
+    <script>
+      // Register COOP/COEP service worker for SharedArrayBuffer support on GitHub Pages.
+      // On first visit the SW is not yet active, so we reload once after registration.
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js').then((registration) => {
+          if (registration.installing || registration.waiting) {
+            const sw = registration.installing || registration.waiting
+            sw.addEventListener('statechange', () => {
+              if (sw.state === 'activated' && !navigator.serviceWorker.controller) {
+                // First install: SW is now active but this page wasn't controlled.
+                // Reload so all requests go through the SW and get COOP/COEP headers.
+                window.location.reload()
+              }
+            })
+          }
+        })
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
