@@ -62,16 +62,25 @@ export default function ProjectsSection() {
                     alignItems: 'center',
                     justifyContent: 'center',
                     marginBottom: '1rem',
+                    overflow: 'hidden',
                   }}
                 >
-                  <span style={{
-                    fontFamily: "'JetBrains Mono', monospace",
-                    fontSize: '0.7rem',
-                    color: DS.textMuted,
-                    letterSpacing: '0.1em',
-                  }}>
-                    {p.title}
-                  </span>
+                  {p.image ? (
+                    <img
+                      src={p.image}
+                      alt={p.title}
+                      style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                    />
+                  ) : (
+                    <span style={{
+                      fontFamily: "'JetBrains Mono', monospace",
+                      fontSize: '0.7rem',
+                      color: DS.textMuted,
+                      letterSpacing: '0.1em',
+                    }}>
+                      {p.title}
+                    </span>
+                  )}
                 </div>
               </div>
 
