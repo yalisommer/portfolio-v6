@@ -87,6 +87,7 @@ export default function AquariumLanding({ heroVisible }: Props) {
 
       {/* Detection toggle — top right */}
       <button
+        className="motif-corners"
         onClick={() => canDetect && setDetectionOn(v => !v)}
         style={{
           position: 'fixed',
@@ -96,11 +97,13 @@ export default function AquariumLanding({ heroVisible }: Props) {
           display: 'flex',
           alignItems: 'center',
           gap: '0.4rem',
-          background: 'rgba(0,0,0,0.5)',
+          background: 'rgba(150,150,150,0.12)',
           backdropFilter: 'blur(8px)',
-          border: '1px solid rgba(255,255,255,0.1)',
-          borderRadius: '999px',
-          padding: '0.3rem 0.75rem',
+          border: 'none',
+          borderRadius: 0,
+          padding: '0.4rem 0.9rem',
+          minWidth: '9rem',
+          justifyContent: 'center',
           fontSize: '0.7rem',
           letterSpacing: '0.12em',
           textTransform: 'uppercase',

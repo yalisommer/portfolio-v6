@@ -28,7 +28,7 @@ See: .planning/PROJECT.md (updated 2026-04-14)
 Phase: 03 (content-sections) — EXECUTING
 Plan: 4 of 4
 Status: Ready to execute
-Last activity: 2026-04-27 - Completed quick task 260427-qsa: host portfolio on github pages with custom domain yalisommer.com
+Last activity: 2026-04-28 - Completed quick task 260428-fjr: speed up yolo model load + restyle detection button with cv corners
 
 Progress: [░░░░░░░░░░] 0%
 
@@ -99,6 +99,8 @@ None yet.
 | 260414-uux | Implement backdrop clipPath scroll reveal, sticky Nav, mesh camera scroll-tracking | 2026-04-14 | — | [260414-uux-implement-backdrop-clippath-scroll-revea](./quick/260414-uux-implement-backdrop-clippath-scroll-revea/) |
 | 260427-p3t | enhance mesh wireframe visibility and add 3 iconic graphics-paper mesh types with stratified layout | 2026-04-27 | — | [260427-p3t-enhance-mesh-wireframe-visibility-and-ad](./quick/260427-p3t-enhance-mesh-wireframe-visibility-and-ad/) |
 | 260427-qsa | host portfolio on github pages with custom domain yalisommer.com | 2026-04-27 | 076f2cd | [260427-qsa-host-portfolio-on-github-pages-with-cust](./quick/260427-qsa-host-portfolio-on-github-pages-with-cust/) |
+| 260428-ff7 | add mouse repulsion to background meshes | 2026-04-28 | — | [260428-ff7-add-mouse-repulsion-to-background-meshes](./quick/260428-ff7-add-mouse-repulsion-to-background-meshes/) |
+| 260428-fjr | speed up yolo model load on production and restyle detection toggle button with cv corners | 2026-04-28 | — | [260428-fjr-speed-up-yolo-model-load-on-production-a](./quick/260428-fjr-speed-up-yolo-model-load-on-production-a/) |
 
 ### Blockers/Concerns
 

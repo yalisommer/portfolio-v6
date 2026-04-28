@@ -44,6 +44,10 @@ const VELOCITY_MAX = 0.45
 const ROTATION_SPEED_MIN = 0.02
 const ROTATION_SPEED_MAX = 0.07
 
+const REPULSION_RADIUS = 3.5
+const REPULSION_STRENGTH = 6.0
+const VELOCITY_MAX_REPULSION = VELOCITY_MAX * 3
+
 // ── Types ──────────────────────────────────────────────────────────────────
 interface BouncingMesh {
   mesh: THREE.Mesh
@@ -214,6 +218,32 @@ function buildFallbackGeometry(index: number): THREE.BufferGeometry {
   return variants[index % variants.length]()
 }
 
+function applyMouseRepulsion(
+  objects: BouncingMesh[],
+  screenX: number,
+  screenY: number,
+  camera: THREE.PerspectiveCamera,
+  bounds: Bounds,
+): void {
+  const worldX = (screenX / window.innerWidth - 0.5) * bounds.w
+  const worldY = camera.position.y + (0.5 - screenY / window.innerHeight) * bounds.h
+  for (const obj of objects) {
+    const dx = obj.mesh.position.x - worldX
+    const dy = obj.mesh.position.y - worldY
+    const distSq = dx * dx + dy * dy
+    if (distSq < REPULSION_RADIUS * REPULSION_RADIUS && distSq > 0.001) {
+      const dist = Math.sqrt(distSq)
+      const strength = REPULSION_STRENGTH * (1 - dist / REPULSION_RADIUS) / dist
+      obj.velocity.x += dx * strength
+      obj.velocity.y += dy * strength
+      const speed = obj.velocity.length()
+      if (speed > VELOCITY_MAX_REPULSION) {
+        obj.velocity.multiplyScalar(VELOCITY_MAX_REPULSION / speed)
+      }
+    }
+  }
+}
+
 // ── useMeshBackground hook ─────────────────────────────────────────────────
 export function useMeshBackground(
   canvasRef: RefObject<HTMLCanvasElement | null>,
@@ -274,6 +304,13 @@ export function useMeshBackground(
     // ── Objects ───────────────────────────────────────────────────────────
     const objects: BouncingMesh[] = []
     let disposed = false
+
+    const mousePos = { x: -9999, y: -9999 }
+    function onMouseMove(e: MouseEvent) {
+      mousePos.x = e.clientX
+      mousePos.y = e.clientY
+    }
+    window.addEventListener('mousemove', onMouseMove)
 
     function addMeshToScene(
       sourceGeometry: THREE.BufferGeometry,
@@ -379,6 +416,7 @@ export function useMeshBackground(
       if (time - lastTime >= FPS_CAP) {
         const dt = Math.min((time - lastTime) / 1000, 0.1)
         lastTime = time
+        applyMouseRepulsion(objects, mousePos.x, mousePos.y, camera, bounds)
         updatePhysics(objects, dt, bounds, Y_BOTTOM, Y_TOP)
       }
 
@@ -403,6 +441,7 @@ export function useMeshBackground(
       disposed = true
       cancelAnimationFrame(rafId)
       window.removeEventListener('resize', onResize)
+      window.removeEventListener('mousemove', onMouseMove)
       scene.traverse((obj) => {
         if (obj instanceof THREE.Mesh) {
           obj.geometry.dispose()

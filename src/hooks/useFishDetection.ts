@@ -20,6 +20,7 @@ export function useFishDetection() {
       try {
         // WASM files are served from public/
         ort.env.wasm.wasmPaths = '/'
+        ort.env.wasm.numThreads = Math.min(navigator.hardwareConcurrency ?? 1, 4)
 
         // Use wasm-only — WebGPU backend's JSEP init can corrupt the WASM
         // runtime state when WebGPU is unavailable, making both backends fail.
