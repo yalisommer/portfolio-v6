@@ -184,7 +184,7 @@ research:
     image: /images/bvc_cubes_gt.png
     status: In Progress
 
-  - lab: "University of Edinburgh — Geometry Processing"
+  - lab: "University of Edinburgh — Geometry Processing Group"
     supervisor: Prof. Amir Vaxman
     title: DROK-Inspired Mesh Manipulation with Training-Time Constraints
     description: >-
@@ -194,7 +194,7 @@ research:
       classical penalty methods and Lagrangian training approaches. End goal: an
       interactive tool for architects to manipulate meshes within a defined
       constraint-space rather than post-correcting unconstrained deformations.
-    image: null
+    image: /images/EGP.png
     status: Completed
 
 # ── Contact ───────────────────────────────────────────────────────────────────
