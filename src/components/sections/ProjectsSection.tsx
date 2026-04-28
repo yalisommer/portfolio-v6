@@ -48,7 +48,7 @@ export default function ProjectsSection() {
             >
               {/* Expandable image region */}
               <div style={{
-                maxHeight: isExpanded ? '300px' : '0px',
+                maxHeight: isExpanded ? '800px' : '0px',
                 overflow: 'hidden',
                 transition: 'max-height 0.4s ease-in-out',
               }}>
@@ -56,7 +56,6 @@ export default function ProjectsSection() {
                   className="motif-corners"
                   style={{
                     width: '100%',
-                    aspectRatio: '16 / 10',
                     background: DS.surface,
                     display: 'flex',
                     alignItems: 'center',
@@ -69,7 +68,7 @@ export default function ProjectsSection() {
                     <img
                       src={p.image}
                       alt={p.title}
-                      style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                      style={{ width: '100%', height: 'auto', display: 'block' }}
                     />
                   ) : (
                     <span style={{
@@ -77,6 +76,7 @@ export default function ProjectsSection() {
                       fontSize: '0.7rem',
                       color: DS.textMuted,
                       letterSpacing: '0.1em',
+                      padding: '2rem',
                     }}>
                       {p.title}
                     </span>
