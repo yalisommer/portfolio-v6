@@ -158,7 +158,7 @@ projects:
     tech: [TypeScript, React, Node.js, ML]
     description: ML-based prediction of college admissions trends.
     link: null
-    image: null
+    image: /images/alma-metrics.jpg
 
   - id: confection
     title: Confection
