@@ -144,6 +144,7 @@ export default function ProjectsSection() {
           {expanded && (
             <div
               key={`img-${animKey}`}
+              className="motif-corners"
               onClick={(e) => e.stopPropagation()}
               style={{
                 flex: '0 0 62%',
