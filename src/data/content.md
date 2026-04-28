@@ -79,7 +79,7 @@ education:
   university: Brown University
   location: "Providence, RI"
   years: "2023 – 2027"
-  degree: B.Sc. Mathematics & Computer Science
+  degree: B.Sc. Mathematics – Computer Science
   gpa: "3.94"
   tas:
     - course: Data Structures & Algorithms
@@ -87,39 +87,43 @@ education:
     - course: Introduction to Computer Graphics
       code: CSCI 1230
   csCourses:
-    - CSCI 1430 Computer Vision
-    - CSCI 1470 Deep Learning
-    - CSCI 2240 Interactive Computer Graphics
-    - CSCI 1951X Formal Proof & Verification
+    - CSCI 0150 Object Oriented Programming
     - CSCI 0200 Data Structures & Algorithms
-    - CSCI 0330 Introduction to Computer Systems
     - CSCI 0320 Software Engineering
-    - CSCI 0220 Discrete Mathematics
+    - CSCI 0330 Introduction to Computer Systems
+    - CSCI 1230 Introduction to Computer Graphics
+    - CSCI 1430 Computer Vision
+    - CSCI 1710 Logic For Systems
+    - CSCI 1951A Data Science
+    - INFR 11241 Computer Graphics- Geometry and Simulation
+
+
   mathCourses:
-    - MATH 1530 Abstract Algebra
-    - MATH 1410 Topology
-    - MATH 1260 Complex Analysis
-    - APMA 1690 Computational Probability
-    - APMA 1660 Statistical Inference
+    - MATH 0180 Multivariable Calculus
     - MATH 0520 Linear Algebra
-    - MATH 0200 Multivariable Calculus
+    - APMA 0350 Applied Ordinary Differential Equations
+    - MATH 0420 Introduction to Number Theory
+    - MATH 1460 Complex Analysis
+    - MATH 1530 Abstract Algebra
+    - APMA 1650 Statistical Inference
+    - Math 10071 Number Theory
 
 # ── Skills ────────────────────────────────────────────────────────────────────
 skills:
   - label: Languages
-    items: [Python, TypeScript, C++, GLSL, Rust, SQL, Java]
+    items: [Python, C++, C, TypeScript, JavaScript, GLSL, SQL, Java]
 
   - label: Vision / Graphics
     items: [OpenCV, OpenGL, WebGL, CUDA, Three.js, Mitsuba 3, BlenderPy]
 
   - label: ML / AI
-    items: [PyTorch, ONNX Runtime, YOLOv8, Hugging Face, scikit-learn, LSTMs]
+    items: [PyTorch, YOLO, Hugging Face, scikit-learn, LSTMs, LLM Integration]
 
   - label: Software Engineering
-    items: [React, Node.js, Vite, Git, Docker, REST APIs, WebAssembly]
+    items: [React, Vite, Git, Docker, REST APIs, Figma Prototyping]
 
   - label: Data
-    items: [PostgreSQL, Pandas, NumPy, Streaming Pipelines, AWS, Data Visualization]
+    items: [PostgreSQL, Pandas, NumPy, Streaming Pipelines, Data Visualization]
 
   - label: Teamwork / Teaching
     items: [Technical Mentorship, User Research, Product Scoping, Code Review, TA Instruction]
@@ -131,7 +135,7 @@ projects:
     tech: [Python, PyTorch, Computer Vision]
     description: 3D CNN-based violence detection for automated security and content moderation.
     link: https://github.com/yalisommer/ViolenceNet
-    image: null
+    image: /images/vnet.jpg
 
   - id: realtime-renderer
     title: Realtime Renderer
@@ -140,14 +144,14 @@ projects:
       Extensive OpenGL-based real-time renderer with screen-space DoF, real-time
       shadow mapping, and more.
     link: null
-    image: null
+    image: /images/realtime.png
 
   - id: raytracer
     title: Raytracer
     tech: [C++, Ray Tracing, Acceleration Structures]
     description: Phong-based C++ raytracer with multi-bounce rays and anti-aliasing.
     link: null
-    image: null
+    image: /images/raytrace.png
 
   - id: alma-metrics
     title: Alma Metrics
@@ -163,7 +167,7 @@ projects:
       Cellular automata epidemiological simulation with formal methods (Forge) for
       discovering interesting emergent cases.
     link: "https://github.com/yalisommer/Confection?tab=readme-ov-file"
-    image: null
+    image: /images/confec.png
 
 # ── Research ──────────────────────────────────────────────────────────────────
 research:
