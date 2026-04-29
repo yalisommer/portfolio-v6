@@ -17,26 +17,25 @@ about:
   focusTags: [ML Engineering, Computer Vision, Computer Graphics, Visual Computing]
   bio:
     - >-
-      I build systems that see — computer vision pipelines, real-time ML inference, and
-      graphics tooling. This site runs YOLOv8 fish detection live in your browser via
-      WebAssembly at ~10 FPS on-device. No cloud, no server. That's what I care about:
-      pushing compute to where the data lives.
+      Hello & welcome to my website! My name is Yali and I'm an engineer and researcher with a focus on machine learning and visual
+      computing. This site runs a fine-tuned YOLOv8 fish detector live in your browser
+      via WebAssembly, which is a pretty good summary of what I care about: creative,
+      AI-forward projects that sit at the intersection of data and the visual side of CS.
     - >-
-      At <a href="#education">Brown</a> I study the math behind learning systems and the
-      geometry behind the images they process. My
+      At <a href="#education">Brown</a> I study the math and theory behind learning
+      systems and the images they process. My
       <a href="#experience">experience</a> spans ML engineering, data science, and product
-      — from anomaly detection on 1M+ telematics units at IturanTech to shaping product
-      direction at an early-stage AI startup.
+      — from anomaly detection across 1M+ telematics units at IturanTech to shaping
+      product direction at an early-stage AI startup.
     - >-
       Outside of industry work I do <a href="#research">research</a> in computer vision
-      and geometry processing — currently studying caustic light reconstruction on curved
-      surfaces with the Brown Visual Computing Lab. I also build
-      <a href="#projects">projects</a> ranging from real-time OpenGL renderers in C++ to
-      3D CNN-based violence detection systems.
+      and geometry processing — currently working with Prof. Amir Vaxman at the University
+      of Edinburgh on mesh manipulation with training-time geometric constraints. I also
+      build <a href="#projects">projects</a> ranging from real-time OpenGL renderers in
+      C++ to 3D CNN-based violence detection systems.
     - >-
-      I'm selective about what I work on — I want to build things that are technically
-      interesting and actually used. Check out my <a href="#skills">skills</a> or reach
-      out via the <a href="#contact">contact</a> section below.
+      The work I care about tends to involve learning, geometry, or both. Browse my
+      <a href="#skills">skills</a> or reach out below.
 
 # ── Experience ────────────────────────────────────────────────────────────────
 experience:
@@ -184,7 +183,7 @@ research:
       behavior and robustness across scene configurations. Broader goal: reconstruct 3D
       scenes where geometry is only visible indirectly through curved reflective surfaces.
     image: /images/bvc_cubes_gt.png
-    status: In Progress
+    status: Completed
 
   - lab: "University of Edinburgh — Geometry Processing Group"
     supervisor: Prof. Amir Vaxman
@@ -197,12 +196,12 @@ research:
       interactive tool for architects to manipulate meshes within a defined
       constraint-space rather than post-correcting unconstrained deformations.
     image: /images/EGP.png
-    status: Completed
+    status: In Progress
 
 # ── Contact ───────────────────────────────────────────────────────────────────
 contact:
   intro: >-
-    Open to full-time opportunities in ML engineering and visual computing research.
+    Open to full-time opportunities in AI engineering and visual computing research.
     Happy to chat about graphics, systems, or building things that run fast.
   terminal:
     whoami: Yali Sommer
@@ -210,7 +209,6 @@ contact:
     school: Brown University
     status: Open to work — Summer 2027
     interests: Computer Vision, Machine Learning, Graphics
-    focus: ML Engineering · Computer Vision · Computer Graphics
   links:
     - label: Email
       value: yali_sommer@brown.edu
