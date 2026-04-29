@@ -24,13 +24,12 @@ about:
     - >-
       At <a href="#education">Brown</a> I study the math and theory behind learning
       systems and the images they process. My
-      <a href="#experience">experience</a> spans ML engineering, data science, and product
-      — from anomaly detection across 1M+ telematics units at IturanTech to shaping
+      <a href="#experience">experience</a> spans ML engineering, data science, and product: from anomaly detection across 1M+ telematics units at IturanTech to shaping
       product direction at an early-stage AI startup.
     - >-
       Outside of industry work I do <a href="#research">research</a> in computer vision
-      and geometry processing — currently working with Prof. Amir Vaxman at the University
-      of Edinburgh on mesh manipulation with training-time geometric constraints. I also
+      and geometry processing. I am currently working with Prof. Amir Vaxman at the University
+      of Edinburgh on mesh manipulation with training-time geometric constraints, which I intend to continue as my Senior Thesis. I also
       build <a href="#projects">projects</a> ranging from real-time OpenGL renderers in
       C++ to 3D CNN-based violence detection systems.
     - >-
