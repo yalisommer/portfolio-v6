@@ -65,8 +65,8 @@ export function useFishDetection() {
     const all = postprocess(
       output.data as Float32Array,
       output.dims,
-      0.20,
-      0.45,
+      0.15,
+      0.35,
       displayW,
       displayH,
       AQUARIUM_CLASSES,

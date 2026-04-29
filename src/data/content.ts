@@ -76,6 +76,10 @@ const contact = data.contact as Record<string, unknown>
 /** HTML strings — may contain inline <a> tags for section links */
 export const aboutBio = about.bio as string[]
 
+export const aboutTagline = about.tagline as string
+
+export const aboutFocusTags = about.focusTags as string[]
+
 export const experienceEntries = data.experience as ExperienceEntry[]
 
 export const educationData = data.education as EducationData

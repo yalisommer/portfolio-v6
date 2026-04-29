@@ -13,6 +13,8 @@ about:
   # First paragraph gets slightly larger, lighter treatment (lead paragraph)
   # Remaining paragraphs are secondary text
   # HTML links using href="#section-id" create smooth-scroll navigation
+  tagline: "Brown University · Math — CS · Class of 2027"
+  focusTags: [ML Engineering, Computer Vision, Computer Graphics, Visual Computing]
   bio:
     - >-
       I build systems that see — computer vision pipelines, real-time ML inference, and
@@ -200,13 +202,13 @@ research:
 # ── Contact ───────────────────────────────────────────────────────────────────
 contact:
   intro: >-
-    Open to opportunities in ML engineering and computer vision research.
+    Open to full-time opportunities in ML engineering and visual computing research.
     Happy to chat about graphics, systems, or building things that run fast.
   terminal:
     whoami: Yali Sommer
     location: "Providence, RI"
     school: Brown University
-    status: Open to work — Summer 2026
+    status: Open to work — Summer 2027
     interests: Computer Vision, Machine Learning, Graphics
     focus: ML Engineering · Computer Vision · Computer Graphics
   links:

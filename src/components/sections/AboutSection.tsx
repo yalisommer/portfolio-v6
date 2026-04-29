@@ -1,6 +1,6 @@
 import { DS } from '../../styles/tokens'
 import '../../styles/motifs.css'
-import { aboutBio } from '../../data/content'
+import { aboutBio, aboutTagline, aboutFocusTags } from '../../data/content'
 
 const sectionHeadingStyle: React.CSSProperties = {
   fontFamily: "'JetBrains Mono', monospace",
@@ -22,8 +22,6 @@ const labelStyle: React.CSSProperties = {
   marginBottom: '0.5rem',
 }
 
-
-const focusTags = ['ML Engineering', 'Computer Vision', 'Computer Graphics', 'Visual Computing']
 
 export default function AboutSection() {
   return (
@@ -63,11 +61,11 @@ export default function AboutSection() {
             Yali Sommer
           </h2>
           <p style={{ ...labelStyle, marginBottom: '1.5rem' }}>
-            Brown University &middot; Math &amp; CS &middot; Class of 2027
+            {aboutTagline}
           </p>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-            {focusTags.map(tag => (
+            {aboutFocusTags.map(tag => (
               <span key={tag} style={{
                 fontFamily: "'JetBrains Mono', monospace",
                 fontSize: '0.65rem',
