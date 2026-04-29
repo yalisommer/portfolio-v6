@@ -66,7 +66,7 @@ export default function ExperienceSection() {
                 width: '8px',
                 height: '8px',
                 borderRadius: '50%',
-                background: isHovered ? DS.textPrimary : DS.textMuted,
+                background: isHovered ? 'rgba(74, 222, 128, 0.85)' : DS.textMuted,
                 transition: 'background 0.2s ease',
                 flexShrink: 0,
               }} />
@@ -94,7 +94,8 @@ export default function ExperienceSection() {
               <h3 style={{
                 fontSize: '1.1rem',
                 fontWeight: 600,
-                color: DS.textPrimary,
+                color: isHovered ? 'rgba(74, 222, 128, 0.85)' : DS.textPrimary,
+                transition: 'color 0.2s ease',
                 marginBottom: '0.25rem',
                 lineHeight: 1.3,
               }}>
