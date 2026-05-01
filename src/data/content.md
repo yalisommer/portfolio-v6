@@ -79,7 +79,7 @@ education:
   university: Brown University
   location: "Providence, RI"
   years: "2023 – 2027"
-  degree: B.Sc. Mathematics – Computer Science
+  degree: Sc.B. Mathematics – Computer Science
   gpa: "3.94"
   tas:
     - course: Data Structures & Algorithms
