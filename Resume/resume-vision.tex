@@ -1,0 +1,187 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-4pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Yali Sommer} \\ \vspace{1pt}
+    \small 954-901-9375 $|$
+    \href{mailto:yali_sommer@brown.edu}{\underline{yali\_sommer@brown.edu}} $|$
+    \href{https://linkedin.com/in/yalisommer}{\underline{LinkedIn}} $|$
+    \href{https://github.com/yalisommer}{\underline{GitHub}} $|$
+    \href{https://yalisommer.com}{\underline{yalisommer.com}} \\[3pt]
+    \small \textbf{Computer Vision $|$ Differentiable Rendering $|$ Geometry Processing} $|$
+    C++, OpenGL, GLSL, PyTorch, Mitsuba 3, BlenderPy
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Brown University $|$ 3.94 GPA}{Providence, RI}
+      {Computer Science Sc.B., Mathematics A.B.}{Sept. 2023 -- May 2027}
+      \resumeSubHeadingListStart
+        \resumeItem{\textbf{Coursework:} Computer Vision, Computer Graphics, Computer Graphics: Geometry \& Simulation, Data Structures \& Algorithms, Computer Systems, Abstract Algebra, Complex Analysis}
+        \resumeItem{\textbf{Teaching:} Undergraduate TA --- Introduction to Computer Graphics (CSCI 1230); Data Structures \& Algorithms (CSCI 0200)}
+      \resumeSubHeadingListEnd
+  \resumeSubHeadingListEnd
+
+%-----------RESEARCH-----------
+\section{Research}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Brown Visual Computing Lab}{Aug. 2025 -- Present}
+    {Research Assistant $|$ Supervisors: Prof. James Tompkin \& Joel Salzman (PhD)}{Providence, RI}
+    \resumeItemListStart
+      \resumeItem{Recovering curved mirror geometry from catacaustic light patterns via gradient-based optimization over a differentiable Mitsuba 3 rendering pipeline, treating mirror coefficients as free parameters fit to observed reflected-light distributions.}
+      \resumeItem{PyTorch optimizer with MS-SSIM perceptual loss and finite-difference gradient estimation to fit parabolic mirror coefficients to rendered scene observations.}
+      \resumeItem{Validated across planar and parabolic configurations using synthetic BlenderPy scenes.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {University of Edinburgh --- Geometry Processing Group}{2025 -- Present}
+    {Research Collaborator $|$ Supervisor: Prof. Amir Vaxman}{Edinburgh, UK $|$ Remote}
+    \resumeItemListStart
+      \resumeItem{Adding constraint satisfaction to the DROK mesh deformation framework: quad planarity and edge stretch conditions encoded directly into training rather than applied as post-corrections.}
+      \resumeItem{Lagrangian multiplier methods and penalty training enforce these constraints during learning, preserving deformation quality across mesh topologies without a correction pass.}
+      \resumeItem{Built a real-time constraint-aware mesh editor within the DROK deformation space; continuing as Brown Senior Thesis co-advised by Prof. Adriana Schulz and Prof. Daniel Ritchie.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Realtime OpenGL Renderer} $|$ \emph{C++, OpenGL, GLSL}}{Oct. 2025 -- Dec. 2025}
+    \resumeItemListStart
+      \resumeItem{Built a real-time C++/OpenGL renderer with a modular GLSL shader pipeline, scene management, and camera controls.}
+      \resumeItem{Implemented percentage-closer soft shadow mapping, bump mapping, and a GPU compute shader particle system supporting fire, smoke, and snow effects.}
+      \resumeItem{Added a full-screen post-processing pass with depth-of-field, fog, and stylized line-art filters driven by Z-buffer readback.}
+      \resumeItem{Maintained 60+ FPS at high polygon counts through draw-call batching and GPU instancing.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Ray Tracer} $|$ \emph{C++, Ray Tracing, BVH}}{Jan. 2025 -- Mar. 2025}
+    \resumeItemListStart
+      \resumeItem{Built a CPU ray tracer in C++ with Phong shading, area-light soft shadows, multi-bounce reflections, and Snell's law refractions.}
+      \resumeItem{Added stochastic anti-aliasing and depth of field via aperture sampling.}
+      \resumeItem{Implemented a BVH acceleration structure from scratch to reduce intersection cost across triangle mesh scenes.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{In-Browser Fish Detection} $|$ \emph{TypeScript, React, YOLOv8, ONNX Runtime Web}}{2025 -- Present}
+    \resumeItemListStart
+      \resumeItem{Trained a YOLOv8 fish species detector from scratch on a HuggingFace dataset and deployed it entirely client-side via ONNX Runtime Web, running at $\sim$10 FPS as a WebAssembly artifact.}
+      \resumeItem{Built the full TypeScript inference stack: GPU-threaded ONNX sessions, frame preprocessing, NMS post-processing, and canvas overlay rendering.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{ViolenceNet} $|$ \emph{Python, PyTorch, TensorFlow, OpenCV, YOLO}}{Mar. 2025 -- May 2025}
+    \resumeItemListStart
+      \resumeItem{Designed a custom 3D CNN on stacked RGB frame volumes for violence classification (94\% val accuracy); integrated fine-tuned YOLOv8 for concurrent dangerous-item detection.}
+      \resumeItem{Evaluated against videos flagged by YouTube's content moderation system; 88\% accuracy on real-world moderated content.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {IturanTech}{May 2025 -- Aug. 2025}
+    {AI/ML Intern}{Tel Aviv, Israel}
+    \resumeItemListStart
+      \resumeItem{Engineered features for an LSTM anomaly detection pipeline across 1M+ connected vehicle units; built a regex aggregation layer translating raw telematics readings to structured text narratives.}
+      \resumeItem{Fine-tuned an LLM on labeled fleet anomaly data for the same detection task; presented to VP of Engineering and advanced for post-internship development.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {SMBC}{June 2026 -- Aug. 2026}
+    {AI Intern, Data Strategy Team}{New York, NY}
+    \resumeItemListStart
+      \resumeItem{Incoming AI Intern on SMBC's Data Strategy team.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeItem{\textbf{Graphics \& Vision:} OpenGL, GLSL, Mitsuba 3, BlenderPy, OpenCV, ONNX Runtime Web} \vspace{-1mm}
+    \resumeItem{\textbf{Languages:} C++, Python, GLSL, TypeScript, SQL, Java} \vspace{-1mm}
+    \resumeItem{\textbf{ML \& Research:} PyTorch, WandB, NumPy, Differentiable Rendering, Gradient-Based Optimization, Inverse Methods} \vspace{-1mm}
+  \resumeSubHeadingListEnd
+
+\end{document}

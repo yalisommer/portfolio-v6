@@ -1,0 +1,178 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-4pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Yali Sommer} \\ \vspace{1pt}
+    \small 954-901-9375 $|$
+    \href{mailto:yali_sommer@brown.edu}{\underline{yali\_sommer@brown.edu}} $|$
+    \href{https://linkedin.com/in/yalisommer}{\underline{LinkedIn}} $|$
+    \href{https://github.com/yalisommer}{\underline{GitHub}} $|$
+    \href{https://yalisommer.com}{\underline{yalisommer.com}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Brown University $|$ 3.94 GPA}{Providence, RI}
+      {Computer Science Sc.B., Mathematics A.B.}{Sept. 2023 -- May 2027}
+      \resumeSubHeadingListStart
+        \resumeItem{\textbf{Coursework:} Data Structures \& Algorithms, Computer Vision, Computer Systems, Data Science, Statistical Inference, Abstract Algebra, Software Engineering}
+        \resumeItem{\textbf{Teaching:} Undergraduate TA --- Data Structures \& Algorithms (CSCI 0200)}
+      \resumeSubHeadingListEnd
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeItem{\textbf{ML/AI:} PyTorch, TensorFlow, YOLO, LSTMs, LLM Fine-Tuning, Hugging Face, scikit-learn, WandB} \vspace{-1mm}
+    \resumeItem{\textbf{Languages:} Python, C++, TypeScript, SQL, Java} \vspace{-1mm}
+    \resumeItem{\textbf{Data Infrastructure:} Pandas, NumPy, PostgreSQL, Streaming Pipelines, Docker, Flask} \vspace{-1mm}
+    \resumeItem{\textbf{Vision \& Research:} OpenCV, Mitsuba 3, BlenderPy, OpenGL, Differentiable Rendering} \vspace{-1mm}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {SMBC}{June 2026 -- Aug. 2026}
+    {AI Intern, Data Strategy Team}{New York, NY}
+    \resumeItemListStart
+      \resumeItem{Incoming AI Intern on SMBC's Data Strategy team.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {IturanTech}{May 2025 -- Aug. 2025}
+    {AI/ML Intern}{Tel Aviv, Israel}
+    \resumeItemListStart
+      \resumeItem{Engineered input features for an LSTM anomaly detection pipeline deployed across 1M+ connected vehicle units, extracting behavioral signals from noisy high-frequency telematics streams.}
+      \resumeItem{Built a regex aggregation pipeline converting raw telematics readings to structured text narratives, and designed the context window architecture for multi-event temporal reasoning.}
+      \resumeItem{Fine-tuned an LLM on labeled fleet anomaly data; presented full detection system to VP of Engineering and advanced for post-internship development.}
+      \resumeItem{Built evaluation benchmarks and monitoring tooling for production telematics inference, enabling systematic comparison across detection approaches.}
+    \resumeItemListEnd
+
+  \resumeSubSubheading
+    {Data Science \& Backend Intern}{Remote $|$ Jan. 2025 -- May 2025}
+    \resumeItemListStart
+      \resumeItem{Built end-to-end streaming pipelines for maritime movement anomaly detection on large-scale South China Sea vessel tracking data.}
+      \resumeItem{Trained and evaluated ML classifiers on geospatial sensor data, establishing baselines carried forward into the summer production role.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{ViolenceNet} $|$ \emph{Python, PyTorch, TensorFlow, OpenCV, YOLO}}{Mar. 2025 -- May 2025}
+    \resumeItemListStart
+      \resumeItem{Designed a custom 3D CNN processing stacked RGB frame volumes for binary violence classification, trained on a labeled fighting video dataset; 94\% validation accuracy.}
+      \resumeItem{Fine-tuned YOLOv8 for dangerous-item detection and integrated it as a concurrent classifier in the same inference pipeline.}
+      \resumeItem{Evaluated against videos flagged by YouTube's content moderation system; 88\% accuracy on real-world moderated content.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Alma Metrics} $|$ \emph{Python, Pandas, scikit-learn, SQL}}{Feb. 2025 -- May 2025}
+    \resumeItemListStart
+      \resumeItem{Built a ridge regression model on 37 years of US News ranking data across 167 universities, achieving R$^2$ = 0.974 for rank prediction and 80.9\% Top-50 classification accuracy.}
+      \resumeItem{Merged the US News College Rankings Archive, Student Metrics \& Academic Performance Dataset, and Common Data Set into a single feature matrix spanning 1988--2025.}
+      \resumeItem{Extrapolated trained model through 2100; analysis surfaced long-range divergence between public and private institution ranking trajectories.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------RESEARCH-----------
+\section{Research}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Brown Visual Computing Lab}{Aug. 2025 -- Present}
+    {Research Assistant $|$ Supervisors: Prof. James Tompkin \& Joel Salzman (PhD)}{Providence, RI}
+    \resumeItemListStart
+      \resumeItem{Recovering curved mirror geometry from catacaustic light patterns via gradient-based optimization and differentiable rendering in Mitsuba 3.}
+      \resumeItem{PyTorch optimizer with MS-SSIM perceptual loss and finite-difference gradient estimation; synthetic ground truth generated in BlenderPy and validated across planar and parabolic mirror configurations.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {University of Edinburgh --- Geometry Processing Group}{2025 -- Present}
+    {Research Collaborator $|$ Supervisor: Prof. Amir Vaxman}{Edinburgh, UK $|$ Remote}
+    \resumeItemListStart
+      \resumeItem{Extending DROK (Data-Free Reduced Order Kinematics) with quad planarity and edge stretch constraints baked into training via Lagrangian and penalty methods.}
+      \resumeItem{Built a real-time constraint-aware mesh editor within the DROK deformation space; continuing as Brown Senior Thesis co-advised by Prof. Adriana Schulz and Prof. Daniel Ritchie.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}

@@ -1,0 +1,246 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape \textcolor{blue}{Yali Sommer}} \\ \vspace{1pt}
+    \small 954-901-9375 $|$ \href{mailto:yalisommer@gmail.com}{\underline{yalisommer@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/yalisommer/}{\underline{LinkedIn}} $|$
+    \href{https://yalisommer.github.io/portfolio/#/}{\underline{Digital Portfolio}} $|$
+    \href{https://github.com/yalisommer}
+    {\underline{GitHub}} 
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Brown University | 3.94 GPA}{Providence, RI}
+      {Computer Science Sc.B., Mathematics A.B.}{Sept 2023 -- May 2027}
+      \resumeSubHeadingListStart
+        \resumeItem{\textbf{Selected Coursework:} Data Structures and Algorithms, Computer Systems, Logic for Systems, Data Science, Abstract Algebra, Number Theory, Complex Analysis, Computer Vision, Computer Graphics, Software Engineering}
+        \resumeItem{\textbf{Teaching Experience:}  Undergraduate TA for Data Structures and Algorithms (CSCI 0200)}
+        
+      \resumeSubHeadingListEnd
+  \resumeSubHeadingListEnd
+
+%----------SKILLS------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeItem{\textbf{Languages:} Python, C, C++, Java, SQL, JavaScript, TypeScript, GLSL} \vspace{-1mm}
+    \resumeItem{\textbf{Tools:} Git, Docker, Tensorflow, PyTorch, Wandb, OpenCV, Flask, Pandas, Matplotlib, OpenGL, BlenderPy, Mitsuba} \vspace{-1mm}
+  \resumeSubHeadingListEnd
+
+  
+  
+% %-----------EXPERIENCE-----------
+% \section{Experience}
+%   \resumeSubHeadingListStart
+
+%     \resumeSubheading
+%       {Ituran, Data Analysis \& Backend Development Intern}{Remote | February 2025 -- Present}
+%       \resumeItemListStart
+%         \resumeItem{Design and implement machine learning systems to reduce false positives in vehicle hijack and break-in detection across Ituran’s global fleet tracking platform.}
+%         \resumeItem{Built classification models using telematics and GPS data to distinguish between real security threats and noise, improving customer trust and safety outcomes.}
+%         \resumeItem{Developed backend services and APIs to connect alerting systems with user-facing dashboards, enabling real-time updates for clients.}
+%       \resumeItemListEnd
+
+%     \resumeSubheading
+%       {Brown University Computer Science Dept, Teaching Assistant}{Providence, Rhode Island | January 2025 -- Present}
+%       \resumeItemListStart
+%         \resumeItem{Guided students through advanced CS concepts in algorithms and introductory machine learning, providing 1:1 and group support during labs and office hours.}
+%         \resumeItem{Led weekly lab sections, helping students translate theory into applied programming solutions using Python and Java.}
+%         \resumeItem{Grade assignments, providing evaluation and feedback to help students improve their technical and design skills.}
+%       \resumeItemListEnd
+
+%     \resumeSubheading
+%       {Florida International University School of Computing, Research Assistant}{Remote | October 2024 -- March 2025}
+%       \resumeItemListStart
+%         \resumeItem{Conduct research focused on advancing software testing through AI and machine learning methodologies, emphasizing automated test generation and model-based approaches.}
+%         \resumeItem{Developed intelligent testing systems, including classifiers and neural networks, to enhance testing efficiency and improve accuracy in quality assurance processes.}
+%         \resumeItem{Designed and implemented solutions bridging the gap between manual and automated testing, leveraging data-driven methods to streamline and optimize software testing workflows.}
+%       \resumeItemListEnd
+
+%     \resumeSubheading
+%       {GenWell (Early-Stage Wellness AI Startup), Product Management Intern}{Providence, Rhode Island | March 2025 -- Present}
+%       \resumeItemListStart
+%         \resumeItem{Collaborate directly with GenWell’s CEO (Lead PM at Carrot Fertility) on product development for an AI-powered wellness journaling and behavior-tracking app.}
+%         \resumeItem{Led user discovery interviews and synthesized insights into actionable personas to inform early product direction.}
+%         \resumeItem{Designed low-fidelity wireframes and contributed to prioritization of AI-powered features during MVP scoping sessions.}
+%         \resumeItem{Participate in weekly product reviews, helping prioritize features and refine roadmap milestones in a startup environment.}
+%       \resumeItemListEnd
+
+%   \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+    {Brown Visual Computing Lab}{Aug. 2025 -- Present}
+    {Research Assistant}{Providence, RI}
+    \resumeItemListStart
+      \resumeItem{Research under Prof. James Tompkin on 3D reconstruction, scene representation, and spatial analysis.}
+      \resumeItem{Study reconstruction of curved reflectors, where light forms complex catacaustics instead of single-point reflections.}\resumeItem{Constrain geometry learning with diffusion models to assess reconstruction plausibility, using Blender datasets with ground-truth curvature.}
+      \resumeItem{Prototype toy cases (mirrors, cones, reflectors) for geometry optimization before scaling to real-world data.}
+      \resumeItem{Extend data-driven reconstruction pipelines to handle complex light transport for disaster response and large-scale modeling.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+      {IturanTech}{May 2025 -- Aug. 2025}
+      {Artificial Intelligence \& Machine Learning Intern}{Tel Aviv, IL}
+      \resumeItemListStart
+        \resumeItem{Engineered scalable ML pipelines to process large-scale vehicle telematics data, enhancing anomaly detection and predictive insights.}
+        \resumeItem{Implemented deep learning models to extract patterns from high-frequency data, increasing detection accuracy.}
+        \resumeItem{Investigated LLM integration for contextual data analysis and real-time system enhancement.}
+      \resumeItemListEnd
+
+  \resumeSubSubheading
+      {Data Analysis \& Backend Dev. Intern}{Remote | Jan. 2025 -- May 2025}
+      \resumeItemListStart
+        \resumeItem{Built machine learning models and backend systems to efficiently process high-frequency telematics data, boosting real-time analytics accuracy.}
+        \resumeItem{Enhanced anomaly detection by applying advanced ML techniques, reducing false positives and improving system reliability.}
+        \resumeItem{Strengthened AI/ML skills through targeted project work in preparation for the summer internship.}
+      \resumeItemListEnd
+
+  \resumeSubheading
+      {Florida Intl. University School of Computing}{Oct. 2024 -- Mar. 2025}
+      {Research Assistant}{Miami, FL | Remote}
+      \resumeItemListStart
+        \resumeItem{Developed dynamic automated test case generation capable of understanding application behavior and producing targeted test suites for any software system.}
+        \resumeItem{Leveraged multiple LLM APIs — including OpenAI, Hugging Face, and Anthropic — to enable flexible, model-agnostic automated test generation.}
+        \resumeItem{Integrated Weights \& Biases (WandB) to track model performance and optimize LLM-driven testing processes.}
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+    % ViolenceNet Project
+    \resumeProjectHeading
+        {\textbf{ViolenceNet} $|$ \emph{Python, TensorFlow, YOLO, OpenCV, Google Colab}}{March 2025 -- May 2025}
+        \resumeItemListStart
+            \resumeItem{Developed 3D CNN-based model to detect violent interactions from video input, achieving up to 94\% validation accuracy.}
+        \resumeItem{Built live video processing pipelines using OpenCV, achieving for live violence detection and integrated fine-tuned YOLO-based object detection model for dangerous items (e.g., guns, knives).}
+        \resumeItem{Implemented automated content moderation with 88\% accuracy on real-world YouTube videos, demonstrating the system’s generalizability.}
+    \resumeItemListEnd
+
+    % Alma Metrics Project
+    \resumeProjectHeading
+        {\textbf{Alma Metrics} $|$ \emph{Python, Pandas, Scikit-learn, SQL, Data Visualization}}{Feb. 2025 -- May 2025}
+        \resumeItemListStart
+            \resumeItem{Built predictive models to analyze US News college rankings, achieving an R² score of 0.974 for ranking predictions and 0.8090 accuracy for Top 50 classification.}
+        \resumeItem{Synthesized data from three sources, creating a final dataset with 167 universities, covering rankings from 1988-2025, admissions, costs, and demographics.}
+        \resumeItem{Developed linear regression models to forecast rankings for 2026, 2030, 2050, and 2100, identifying trends like public universities rising to the top 10 by 2100.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}

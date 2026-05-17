@@ -1,0 +1,168 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-4pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Yali Sommer} \\ \vspace{1pt}
+    \small 954-901-9375 $|$
+    \href{mailto:yali_sommer@brown.edu}{\underline{yali\_sommer@brown.edu}} $|$
+    \href{https://linkedin.com/in/yalisommer}{\underline{LinkedIn}} $|$
+    \href{https://github.com/yalisommer}{\underline{GitHub}} $|$
+    \href{https://yalisommer.com}{\underline{yalisommer.com}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Brown University $|$ 3.94 GPA}{Providence, RI}
+      {Computer Science Sc.B., Mathematics A.B.}{Sept. 2023 -- May 2027}
+      \resumeSubHeadingListStart
+        \resumeItem{\textbf{Coursework:} Data Structures \& Algorithms, Software Engineering, Computer Systems, Logic for Systems, Data Science}
+        \resumeItem{\textbf{Teaching:} Undergraduate TA --- Data Structures \& Algorithms (CSCI 0200)}
+      \resumeSubHeadingListEnd
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeItem{\textbf{Languages:} Python, C++, TypeScript, JavaScript, SQL, Java, GLSL} \vspace{-1mm}
+    \resumeItem{\textbf{Frameworks \& Tools:} React, Vite, Flask, Docker, Git, REST APIs, Node.js} \vspace{-1mm}
+    \resumeItem{\textbf{Data \& ML:} PyTorch, OpenCV, Pandas, PostgreSQL, NumPy, scikit-learn, Streaming Pipelines} \vspace{-1mm}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {SMBC}{June 2026 -- Aug. 2026}
+    {AI Intern, Data Strategy Team}{New York, NY}
+    \resumeItemListStart
+      \resumeItem{Incoming AI Intern on SMBC's Data Strategy team.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {IturanTech}{May 2025 -- Aug. 2025}
+    {AI/ML Intern}{Tel Aviv, Israel}
+    \resumeItemListStart
+      \resumeItem{Engineered input features for an LSTM anomaly detection pipeline deployed across 1M+ connected vehicle units, extracting behavioral signals from noisy high-frequency telematics streams.}
+      \resumeItem{Built a regex aggregation pipeline converting raw telematics readings to structured text narratives, and designed the context window architecture for multi-event temporal reasoning.}
+      \resumeItem{Fine-tuned an LLM on labeled fleet anomaly data; presented full detection system to VP of Engineering and advanced for post-internship development.}
+      \resumeItem{Built evaluation benchmarks and monitoring tooling for production telematics inference, enabling systematic comparison across detection approaches.}
+    \resumeItemListEnd
+
+  \resumeSubSubheading
+    {Data Science \& Backend Intern}{Remote $|$ Jan. 2025 -- May 2025}
+    \resumeItemListStart
+      \resumeItem{Built end-to-end streaming pipelines for maritime movement anomaly detection on large-scale South China Sea vessel tracking data.}
+      \resumeItem{Trained and evaluated ML classifiers on geospatial sensor data, establishing baselines carried forward into the summer production role.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Realtime OpenGL Renderer} $|$ \emph{C++, OpenGL, GLSL}}{Oct. 2025 -- Dec. 2025}
+    \resumeItemListStart
+      \resumeItem{Built a real-time C++/OpenGL renderer maintained at 60+ FPS via draw-call batching and GPU instancing.}
+      \resumeItem{Implemented percentage-closer soft shadow mapping, bump mapping, and a GPU compute shader particle system supporting fire, smoke, and snow effects.}
+      \resumeItem{Added a full-screen post-processing pass with depth-of-field, fog, and stylized line-art filters driven by Z-buffer readback.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{ViolenceNet} $|$ \emph{Python, PyTorch, TensorFlow, OpenCV, YOLO}}{Mar. 2025 -- May 2025}
+    \resumeItemListStart
+      \resumeItem{Designed a custom 3D CNN processing stacked RGB frame volumes for binary violence classification, trained on a labeled fighting video dataset; 94\% validation accuracy.}
+      \resumeItem{Fine-tuned YOLOv8 for dangerous-item detection and integrated it as a concurrent classifier in the same inference pipeline.}
+      \resumeItem{Evaluated against videos flagged by YouTube's content moderation system; 88\% accuracy on real-world moderated content.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Aquarium Demo} $|$ \emph{TypeScript, React, ONNX Runtime Web, YOLOv8}}{2025 -- Present}
+    \resumeItemListStart
+      \resumeItem{Trained a YOLOv8 fish species detector from scratch, exported to ONNX, and deployed entirely in-browser via ONNX Runtime Web and WebAssembly.}
+      \resumeItem{Built the complete TypeScript/React inference pipeline: frame preprocessing, ONNX session management, NMS post-processing, and canvas overlay at $\sim$10 FPS with no server-side compute.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Confection} $|$ \emph{JavaScript, TypeScript, Forge (Formal Methods)}}{Fall 2024}
+    \resumeItemListStart
+      \resumeItem{Built a cellular automata epidemic simulator; used Forge to formally verify perpetual-spread, extinction, and vaccine-modified behavioral configurations.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}

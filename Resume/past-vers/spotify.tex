@@ -1,0 +1,190 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% Commands
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-4pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADER----------
+\begin{center}
+  \textbf{\Huge \scshape \textcolor{blue}{Yali Sommer}} \\ \vspace{2pt}
+  \small
+  954-901-9375 $|$
+  \href{mailto:yalisommer@gmail.com}{\underline{yalisommer@gmail.com}} $|$
+  \href{https://www.linkedin.com/in/yalisommer/}{\underline{LinkedIn}} $|$
+  \href{https://yalisommer.github.io/portfolio/#/}{\underline{Portfolio}} $|$
+  \href{https://github.com/yalisommer}{\underline{GitHub}} \\[4pt]
+  \small \textbf{Machine Learning, Representation Learning, and Data-Driven Systems}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Brown University \,|\, 3.94 GPA}{Providence, RI}
+    {Computer Science Sc.B., Mathematics A.B.}{Sept 2023 -- May 2027}
+    \resumeItemListStart
+      \resumeItem{\textbf{Selected Coursework:} Data Structures and Algorithms, Computer Systems, Logic for Systems, Data Science, Computer Vision, Computer Graphics, Software Engineering, Abstract Algebra, Number Theory}
+      \resumeItem{\textbf{Teaching:} Undergraduate Teaching Assistant for Data Structures and Algorithms (CSCI 0200)}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeItem{\textbf{Languages:} Python, C, C++, Java, SQL, JavaScript, TypeScript, GLSL} \vspace{-1mm}
+    \resumeItem{\textbf{Tools:} OpenGL, BlenderPy, Mitsuba, OpenCV, Tensorflow, PyTorch, Wandb, Flask, Pandas, Matplotlib, Docker} \vspace{-1mm}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+% IturanTech AI/ML Intern
+\resumeSubheading
+  {IturanTech}{May 2025 -- Aug. 2025}
+  {Artificial Intelligence \& Machine Learning Intern}{Tel Aviv, IL}
+  \resumeItemListStart
+    \resumeItem{Designed and iterated on machine learning pipelines to extract meaningful behavioral signals from high-frequency vehicle telematics data at scale.}
+    \resumeItem{Trained and evaluated deep learning models for anomaly detection, focusing on reducing false positives and improving decision reliability in real-time systems.}
+    \resumeItem{Explored representation learning techniques to model temporal patterns in noisy multivariate time-series data.}
+    \resumeItem{Analyzed model behavior across operating conditions to understand failure modes and guide iterative improvements.}
+    \resumeItem{Investigated the use of large language models to add contextual reasoning on top of structured telemetry data, prototyping early-stage integrations.}
+    \resumeItem{Collaborated with engineers and analysts to align model outputs with real-world outcomes and system constraints.}
+  \resumeItemListEnd
+
+% IturanTech Backend / Data Intern
+\resumeSubSubheading
+  {Data Analysis \& Backend Development Intern}{Remote \hspace{1em} Jan. 2025 -- May 2025}
+  \resumeItemListStart
+    \resumeItem{Built backend services and data pipelines to process high-frequency sensor data for real-time analytics and ML inference.}
+    \resumeItem{Improved data quality and feature extraction pipelines to support iterative model development and evaluation.}
+    \resumeItem{Supported experimentation workflows by integrating model outputs into internal dashboards and monitoring tools.}
+  \resumeItemListEnd
+
+% Brown Visual Computing Lab
+\resumeSubheading
+  {Brown University -- Visual Computing Lab}{Aug. 2025 -- Present}
+  {Research Assistant}{Providence, RI}
+  \resumeItemListStart
+    \resumeItem{Conduct research on learning-based scene reconstruction under Prof. James Tompkin, focusing on neural and diffusion-based approaches to geometry inference.}
+    \resumeItem{Designed controlled synthetic experiments to study model behavior, starting from simplified toy scenes and scaling toward complex real-world settings.}
+    \resumeItem{Analyzed reconstruction plausibility, stability, and error characteristics to evaluate learned representations.}
+    \resumeItem{Compared modeling approaches to understand tradeoffs between expressiveness, generalization, and optimization stability.}
+    \resumeItem{Extended experimental pipelines to assess scalability and robustness across data regimes.}
+  \resumeItemListEnd
+
+% University of Edinburgh
+\resumeSubheading
+  {University of Edinburgh}{Sept. 2025 -- Present}
+  {Research Assistant -- Latent Space Analysis}{Edinburgh, UK}
+  \resumeItemListStart
+    \resumeItem{Study latent space representations in machine learning models through dimensionality reduction and visualization techniques.}
+    \resumeItem{Explored methods for embedding high-dimensional representations into \textbf{3D latent spaces}, extending traditional 2D analysis to better capture structure and relationships.}
+    \resumeItem{Analyzed how different reduction techniques affect interpretability, clustering behavior, and representation quality.}
+    \resumeItem{Used visualization as a diagnostic tool to understand model behavior and representation geometry across datasets.}
+  \resumeItemListEnd
+
+% FIU Research
+\resumeSubheading
+  {Florida International University -- School of Computing}{Oct. 2024 -- Mar. 2025}
+  {Research Assistant}{Remote}
+  \resumeItemListStart
+    \resumeItem{Prototyped LLM-driven systems for automated software test generation, experimenting with multiple model families and APIs.}
+    \resumeItem{Evaluated model outputs to improve relevance, coverage, and consistency through iterative prompt and workflow refinement.}
+    \resumeItem{Built tooling to track experimental results and compare performance across models using Weights \& Biases.}
+    \resumeItem{Explored model-agnostic approaches to enable flexible integration of emerging LLMs.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+  {\textbf{ViolenceNet} $|$ \emph{Python, TensorFlow, OpenCV, YOLO}}{Mar. 2025 -- May 2025}
+  \resumeItemListStart
+    \resumeItem{Built and evaluated a deep learning pipeline for detecting violent interactions in video, achieving strong validation and real-world performance.}
+    \resumeItem{Designed end-to-end experimentation workflows including preprocessing, training, evaluation, and live inference.}
+    \resumeItem{Combined temporal modeling with object detection to improve contextual understanding of complex scenes.}
+  \resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{Alma Metrics} $|$ \emph{Python, Pandas, SQL, Scikit-learn}}{Feb. 2025 -- May 2025}
+  \resumeItemListStart
+    \resumeItem{Analyzed multi-source datasets to model trends in university rankings using regression and classification techniques.}
+    \resumeItem{Evaluated predictive performance across multiple horizons, emphasizing interpretability alongside accuracy.}
+    \resumeItem{Translated quantitative results into insights about long-term structural trends.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}

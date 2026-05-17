@@ -1,0 +1,177 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-4pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Yali Sommer} \\ \vspace{1pt}
+    \small 954-901-9375 $|$
+    \href{mailto:yali_sommer@brown.edu}{\underline{yali\_sommer@brown.edu}} $|$
+    \href{https://linkedin.com/in/yalisommer}{\underline{LinkedIn}} $|$
+    \href{https://github.com/yalisommer}{\underline{GitHub}} $|$
+    \href{https://yalisommer.com}{\underline{yalisommer.com}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Brown University $|$ 3.94 GPA}{Providence, RI}
+      {Computer Science Sc.B., Mathematics A.B.}{Sept. 2023 -- May 2027}
+      \resumeSubHeadingListStart
+        \resumeItem{\textbf{CS:} Computer Vision, Computer Graphics, Computer Graphics: Geometry \& Simulation, Data Structures \& Algorithms, Data Science, Software Engineering}
+        \resumeItem{\textbf{Math:} Abstract Algebra, Complex Analysis, Statistical Inference, Linear Algebra, Applied Differential Equations}
+        \resumeItem{\textbf{Teaching:} Undergraduate TA --- Introduction to Computer Graphics (CSCI 1230); Data Structures \& Algorithms (CSCI 0200)}
+      \resumeSubHeadingListEnd
+  \resumeSubHeadingListEnd
+
+%-----------RESEARCH-----------
+\section{Research}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Brown Visual Computing Lab}{Aug. 2025 -- Present}
+    {Research Assistant $|$ Supervisors: Prof. James Tompkin \& Joel Salzman (PhD)}{Providence, RI}
+    \resumeItemListStart
+      \resumeItem{Recovering parabolic mirror geometry from catacaustic light patterns, where mirror shape must be inferred from how reflected light redistributes across a scene rather than from any direct surface observation.}
+      \resumeItem{PyTorch gradient optimizer with finite-difference gradient estimation and MS-SSIM perceptual loss as the reconstruction objective; loss selected to capture geometric distortion in reflected patterns rather than pixel-level similarity.}
+      \resumeItem{Synthetic ground truth generated in BlenderPy; reconstruction validated across planar and parabolic mirror configurations with progressively complex scenes.}
+      \resumeItem{Extending toward recovery of full 3D scene structure in settings where geometry is observable only indirectly through curved reflective surfaces.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {University of Edinburgh --- Geometry Processing Group}{2025 -- Present}
+    {Research Collaborator $|$ Supervisor: Prof. Amir Vaxman}{Edinburgh, UK $|$ Remote}
+    \resumeItemListStart
+      \resumeItem{Extending DROK (Data-Free Reduced Order Kinematics) with training-time geometric constraints, encoding quad planarity and piecewise edge stretch conditions directly into the learning objective.}
+      \resumeItem{Constraint satisfaction via Lagrangian multiplier methods and penalty training, replacing post-correction pipelines while preserving learned deformation quality across mesh topologies.}
+      \resumeItem{Built a real-time constraint-aware mesh editor operating within the learned DROK deformation space; actively refining constraint parameterization and evaluating more advanced constraint strategies.}
+      \resumeItem{Continuing as Brown Senior Thesis co-advised by Prof. Adriana Schulz and Prof. Daniel Ritchie.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {IturanTech}{May 2025 -- Aug. 2025}
+    {AI/ML Intern}{Tel Aviv, Israel}
+    \resumeItemListStart
+      \resumeItem{Engineered features for an LSTM anomaly detection pipeline across 1M+ connected vehicle units; built a regex aggregation layer translating raw telematics readings to structured text narratives.}
+      \resumeItem{Fine-tuned an LLM on labeled fleet anomaly data for the same detection task; presented to VP of Engineering and advanced for post-internship development.}
+    \resumeItemListEnd
+
+  \resumeSubSubheading
+    {Data Science \& Backend Intern}{Remote $|$ Jan. 2025 -- May 2025}
+    \resumeItemListStart
+      \resumeItem{Built streaming pipelines for maritime movement anomaly detection on South China Sea vessel tracking data; trained and evaluated ML classifiers establishing production baselines.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {SMBC}{June 2026 -- Aug. 2026}
+    {AI Intern, Data Strategy Team}{New York, NY}
+    \resumeItemListStart
+      \resumeItem{Incoming AI Intern on SMBC's Data Strategy team.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{ViolenceNet} $|$ \emph{Python, PyTorch, TensorFlow, OpenCV, YOLO}}{Mar. 2025 -- May 2025}
+    \resumeItemListStart
+      \resumeItem{Designed a custom 3D CNN on stacked RGB frame volumes for violence classification (94\% val accuracy); integrated fine-tuned YOLOv8 for concurrent dangerous-item detection.}
+      \resumeItem{Evaluated against videos flagged by YouTube's content moderation system; 88\% accuracy on real-world moderated content.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Alma Metrics} $|$ \emph{Python, Pandas, scikit-learn, SQL}}{Feb. 2025 -- May 2025}
+    \resumeItemListStart
+      \resumeItem{Ridge regression on 37 years of US News ranking data (167 universities); R$^2$ = 0.974 rank prediction, 80.9\% Top-50 classification accuracy.}
+      \resumeItem{Merged the US News College Rankings Archive, Student Metrics \& Academic Performance Dataset, and Common Data Set across 1988--2025; model extrapolated through 2100.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeItem{\textbf{Research Tools:} PyTorch, Mitsuba 3, BlenderPy, OpenCV, WandB, scikit-learn, NumPy} \vspace{-1mm}
+    \resumeItem{\textbf{Languages:} Python, C++, GLSL, TypeScript, SQL, Java} \vspace{-1mm}
+    \resumeItem{\textbf{Methods:} Differentiable Rendering, Gradient-Based Optimization, Inverse Methods, Lagrangian Constrained Learning, LSTMs, LLM Fine-Tuning} \vspace{-1mm}
+  \resumeSubHeadingListEnd
+
+\end{document}

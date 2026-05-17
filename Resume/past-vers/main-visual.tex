@@ -1,0 +1,204 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape \textcolor{blue}{Yali Sommer}} \\ \vspace{1pt}
+    \small 954-901-9375 $|$ \href{mailto:yalisommer@gmail.com}{\underline{yalisommer@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/yalisommer/}{\underline{LinkedIn}} $|$
+    \href{https://yalisommer.github.io/portfolio/#/}{\underline{Digital Portfolio}} $|$
+    \href{https://github.com/yalisommer}
+    {\underline{GitHub}} \\[3pt]
+    \small \textbf{Realtime Rendering, Neural Graphics, and 3D Vision} $|$ C++, OpenGL, GLSL, Blender, Mitsuba, PyTorch, Differentiable Rendering, NeRF
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Brown University | 3.94 GPA}{Providence, RI}
+      {Computer Science Sc.B., Mathematics A.B.}{Sept 2023 -- May 2027}
+      \resumeSubHeadingListStart
+        \resumeItem{\textbf{Selected Coursework:} Data Structures and Algorithms, Computer Systems, Logic for Systems, Data Science, Abstract Algebra, Number Theory, Complex Analysis, Computer Vision, Computer Graphics, Software Engineering}
+        \resumeItem{\textbf{Teaching Experience:} Undergraduate TA for Data Structures and Algorithms (CSCI 0200)}
+      \resumeSubHeadingListEnd
+  \resumeSubHeadingListEnd
+
+%----------SKILLS------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeItem{\textbf{Languages:} Python, C, C++, Java, SQL, JavaScript, TypeScript, GLSL} \vspace{-1mm}
+    \resumeItem{\textbf{Tools:} OpenGL, BlenderPy, Mitsuba, OpenCV, Tensorflow, PyTorch, Wandb, Flask, Pandas, Matplotlib, Docker} \vspace{-1mm}
+  \resumeSubHeadingListEnd
+
+  
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+% Brown Visual Computing Lab
+\resumeSubheading
+    {Brown Visual Computing Lab}{Aug. 2025 -- Present}
+    {Research Assistant}{Providence, RI}
+    \resumeItemListStart
+        \resumeItem{Research neural scene representations and \textbf{differentiable rendering} under Prof. James Tompkin, focusing on reconstruction of curved reflectors with complex caustic light paths.}
+        \resumeItem{Generate synthetic datasets in \textbf{Blender} and validate gradient-based optimization in \textbf{Mitsuba} for reflector geometry recovery.}
+        \resumeItem{Investigate \textbf{NeRF-style} and diffusion-based priors to assess reconstruction plausibility and stability.}
+        \resumeItem{Analyze rendering error, curvature consistency, and optimization behavior across scenes to benchmark neural and differentiable rendering methods.}
+    \resumeItemListEnd
+
+% IturanTech - AI/ML Intern
+\resumeSubheading
+    {IturanTech}{May 2025 -- Aug. 2025}
+    {Artificial Intelligence \& Machine Learning Intern}{Tel Aviv, IL}
+    \resumeItemListStart
+        \resumeItem{Engineered scalable ML pipelines for high-frequency telematics data, improving anomaly detection and predictive insights.}
+        \resumeItem{Trained deep learning models on real-time vehicle sensor streams, increasing detection reliability.}
+        \resumeItem{Explored LLM integration for contextual data analysis and system enhancement.}
+    \resumeItemListEnd
+
+% IturanTech - Data Analysis & Backend Intern
+\resumeSubSubheading
+    {Data Analysis \& Backend Development Intern}{Remote \hspace{1em} Jan. 2025 -- May 2025}
+    \resumeItemListStart
+        \resumeItem{Developed backend systems and ML models to process high-frequency telematics data for real-time analytics.}
+        \resumeItem{Improved anomaly detection reliability through advanced modeling techniques and iterative refinement.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+    % Realtime OpenGL Renderer Project
+    \resumeProjectHeading
+        {\textbf{Realtime OpenGL Renderer} $|$ \emph{C++, OpenGL, GLSL}}{Oct. 2025 -- Dec. 2025}
+        \resumeItemListStart
+            \resumeItem{Built a realtime renderer from scratch in C++/OpenGL with camera controls, scene management, and a modular shader pipeline.}
+            \resumeItem{Implemented lighting and shadow shaders with soft shadow mapping, bump mapping, scrolling textures, instanced rendering, and particle effects.}
+            \resumeItem{Added a post-processing pipeline with depth-based DOF, fog, pixelation, and line-art filters driven by the Z-buffer.}
+            \resumeItem{Optimized draw-call efficiency through batching and GPU-side instancing to maintain real-time performance as scene complexity increased.}
+        \resumeItemListEnd
+
+    % CPU Ray Tracer Project (dummy but plausible block)
+    \resumeProjectHeading
+        {\textbf{Ray Tracer} $|$ \emph{C++, Ray Tracing, Linear Algebra}}{Jan. 2025 -- Mar. 2025}
+        \resumeItemListStart
+            \resumeItem{Implemented a CPU-based ray tracer in C++ supporting spheres, planes, and triangle meshes with Phong shading and shadows.}
+            \resumeItem{Added reflections, refractions, anti-aliasing, and depth of field to render physically inspired scenes.}
+            \resumeItem{Introduced a simple BVH acceleration structure to reduce per-frame ray--primitive intersection tests and scale to higher scene complexity.}
+        \resumeItemListEnd
+
+    % ViolenceNet Project
+    \resumeProjectHeading
+        {\textbf{ViolenceNet} $|$ \emph{Python, TensorFlow, YOLO, OpenCV, Google Colab}}{Mar. 2025 -- May 2025}
+        \resumeItemListStart
+            \resumeItem{Developed a 3D CNN-based model to detect violent interactions from video input, achieving up to 94\% validation accuracy.}
+            \resumeItem{Built live video processing pipelines using OpenCV for real-time violence detection and integrated a fine-tuned YOLO-based object detection model for dangerous items (e.g., guns, knives).}
+            \resumeItem{Implemented automated content moderation with 88\% accuracy on real-world YouTube videos, demonstrating the system’s generalizability.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
